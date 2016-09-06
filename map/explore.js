@@ -401,9 +401,21 @@
 		$(this).append("<div class='loading'>");
 		stateObj.selectedPostId = post_id;
 		updateHistory();
-	//	_paq.push(['trackLink', postlistByGlobalId[post_id].url, 'link']);
-		window.location = postlistByGlobalId[post_id].url;
 
+		// track if possible
+		if(typeof ga == 'function') { 
+			ga('send', 'event', {
+			    eventCategory: 'Outbound Link',
+			    eventAction: 'click',
+			    eventLabel: postlistByGlobalId[post_id].title,
+			    hitCallback: function() {
+			      window.location = postlistByGlobalId[post_id].url;
+			    }
+			  });
+		}
+		else {
+			window.location = postlistByGlobalId[post_id].url;
+		}
 	}
 	
 	// Populate div for post browsing
