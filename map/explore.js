@@ -32,8 +32,8 @@
 	}
 
 	var load_request = get_request_parm('load');
-	if(load_request == 'demo') {
-		load_request = 'http://www.franceimage.com/en/places-to-visit/wp-content/uploads/posts.json';
+	if(load_request == '') {
+		load_request = '/json/places.json';
 	}
 
 
@@ -401,7 +401,7 @@
 		$(this).append("<div class='loading'>");
 		stateObj.selectedPostId = post_id;
 		updateHistory();
-		_paq.push(['trackLink', postlistByGlobalId[post_id].url, 'link']);
+	//	_paq.push(['trackLink', postlistByGlobalId[post_id].url, 'link']);
 		window.location = postlistByGlobalId[post_id].url;
 
 	}
