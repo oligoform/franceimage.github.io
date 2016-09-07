@@ -125,6 +125,8 @@
 		editableMarkers.clearLayers();
 		
 		for (var i = 0; i < postlist.length; i++) {
+			postlist[i].url = "https://www.youtube.com/watch?v=" + postlist[i].youtubeId;
+			postlist[i].thumbnail = "https://i.ytimg.com/vi/" + postlist[i].youtubeId + "/hqdefault.jpg";
 			var m = L.marker([postlist[i].latitude, postlist[i].longitude], { icon: markerIcon });
 			postlistByGlobalId[postlist[i].guid] = postlist[i];
 			m.postId = postlist[i].guid;
