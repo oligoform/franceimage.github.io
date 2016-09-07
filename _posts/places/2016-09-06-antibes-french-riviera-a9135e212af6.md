@@ -1,7 +1,7 @@
 ---
 guid: "a9135e212af6"
 title: "Antibes - French Riviera"
-latitude: "43.5849917351342"
-longitude: "7.121372222900391"
+latitude: "43.584991"
+longitude: "7.121372"
 youtubeId: "qxHQj6rrj_w"
 ---
