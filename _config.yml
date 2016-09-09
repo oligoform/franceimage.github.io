@@ -6,3 +6,9 @@ kramdown:
   entity_output: as_input
   
 exclude: ['CNAME', 'README.md']
+
+defaults:
+  - scope:
+      path: "_posts/places"
+    values:
+      type: "places"

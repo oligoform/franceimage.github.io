@@ -639,9 +639,9 @@
 			parms = parms + "&popup=" + stateObj.selectedPostId;
 		}
 		
-		if(load_request) {
-			parms = parms + "&load=" + load_request;
-		}
+		//if(load_request) {
+		//	parms = parms + "&load=" + load_request;
+		//}
 		
 		History.replaceState({}, document.title, "?" + parms);				
 	}
