@@ -25,3 +25,5 @@ http://glyphicons.com/
 http://piwik.org/
 
 http://closure-compiler.appspot.com/home
+
+https://www.guidgenerator.com/online-guid-generator.aspx
