@@ -31,12 +31,6 @@
 		stateObj.selectedPostId = postid_request;
 	}
 
-	var load_request = get_request_parm('load');
-	if(load_request == '') {
-		load_request = '/json/places.json';
-	}
-
-
 	/**
 	 * Map creation, controls creation and global variable setting
 	 */
@@ -70,59 +64,23 @@
 	var markerHoverIcon = L.divIcon({ className : 'circle hover', iconSize : [ 12, 12 ]});
 	var markerSelectedIcon = L.divIcon({ className : 'circle selected', iconSize : [ 12, 12 ]});
 
-	// Draw control
-	var isEditing = false;
-	var isDeleting = false;
-	var editableMarkers = new L.FeatureGroup();
-	map.addLayer(editableMarkers);		
-	var drawControl = new L.Control.Draw({
-		draw: {
-			polyline: false,
-			polygon: false,
-			rectangle: false,
-			circle: false,
-			marker: {
-				icon: markerIcon
-			}
-		},
-	    edit: {
-	        featureGroup: editableMarkers
-	    }
+	
+	// Load data
+	$.ajax({
+	    url: '/json/places.json',
+	    //jsonpCallback: "processJSON",
+	    jsonp: false,
+	    dataType: "jsonp"
+	}).done(function(data){
 	});
-	map.addControl(drawControl); // hidden 
-	
-	
-	/**
-	 * Initial loading
-	 */ 
-	if(sessionStorage.getItem("dirty") == "1") {
-		setEditing(true);
-		setDirty();
-	}
-	
-	var sessionPostlist = sessionStorage.getItem("postlist");
-	if(sessionPostlist) {
-		postlist = $.parseJSON(sessionPostlist);
-		processJSON(postlist);
-	}
-	else {
-		if(load_request) {
-			$.ajax({
-			    url: load_request,
-			    //jsonpCallback: "processJSON",
-			    jsonp: false,
-			    dataType: "jsonp"
-			}).done(function(data){
-			});
-		}
-	}
+
+
 	
 	// Parse JSON input. Can be called at initial loading or by selecting an input file
 	function processJSON(data) {
 		postlist = data;
 		markers = {};	// key: postId	
 		postlistByGlobalId = {}; // key: postId	
-		editableMarkers.clearLayers();
 		
 		for (var i = 0; i < postlist.length; i++) {
 			postlist[i].url = "https://www.youtube.com/watch?v=" + postlist[i].youtubeId;
@@ -140,42 +98,9 @@
 	}
 	
 	
-	// Parse JSON input. Can be called at initial loading or by selecting an input file
-	function processGeoJSON(data) {
-		postlist = [];
-		markers = {};	// key: postId	
-		postlistByGlobalId = {}; // key: postId	
-		editableMarkers.clearLayers();
-
-		for (var i = 0; i < data.features.length; i++) {
-			var feature = data.features[i];
-
-			var newPost = {
-					latitude: feature.geometry.coordinates[1],
-					longitude: feature.geometry.coordinates[0],
-					guid: feature.properties.guid,
-					title: feature.properties.title,
-					thumbnail: feature.properties.thumbnail,
-					url: feature.properties.url,
-					excerpt: feature.properties.excerpt
-				};
-			
-			postlist.push(newPost);
-						
-			var m = L.marker([newPost.latitude, newPost.longitude], { icon: markerIcon });
-			postlistByGlobalId[newPost.guid] = newPost;
-			m.postId = newPost.guid;
-			markers[newPost.guid] = m; 
-			initMarker(m);
-		}	
-		
-		refresh_postlist();	
-	}	
-	
-	
 	// Initialize marker
 	function initMarker(m) {
-		editableMarkers.addLayer(m);
+		map.addLayer(m);
 		m.on('click', markerClicked);
 		m.on('mouseover', function(e) { 
 			map.dragging.disable();
@@ -197,8 +122,6 @@
 		m.on('mouseout', function(e) { 
 			map.dragging.enable();
 			map.closePopup(tooltipPopup);
-
-			if(isDeleting) return;
 
 			// Style marker and post in postlist
 			$("div.postContent[data-post_id=" + e.target.postId + "]").removeClass('hover');
@@ -240,8 +163,6 @@
 	
 	// Marker clicked
 	function markerClicked(e) {
-		if(isDeleting) return;	
-		
 		if (stateObj.selectedPostId == -1) {
 			stateObj.selectedPostId = e.target.postId;
 			$("div.postContent[data-post_id=" + stateObj.selectedPostId + "]").removeClass("hover");
@@ -314,7 +235,6 @@
 			for (var i = 0; i < postlist.length; i++) {
 				if(map.getBounds().contains(markers[postlist[i].guid].getLatLng())) {
 					postlist[i].lazyload = true;
-					postlist[i].editing = isEditing;
 					postListContainer.append( Mustache.render(postContentTpl, postlist[i]) );				
 				}
 			}
@@ -380,21 +300,6 @@
 				centerMapOnPost(post_id);
 			});
 		
-		$("div.postContent a.editPost").click(
-			function(event) {
-				event.stopPropagation();
-				event.preventDefault();	
-				$(this).off("click");
-
-				var post_id = $(this).attr("data-post_id");
-				var postContent = $("div.postContent[data-post_id=" + post_id + "]");
-				if(isEditing) {
-					postContent.off("click", postClicked);
-					var editor = $('<div>');
-					postContent.append(editor);
-					populatePostEditor(editor, post_id);
-				}
-			});
 	}
 
 	
@@ -422,101 +327,7 @@
 		}
 	}
 	
-	// Populate div for post browsing
-	// DELETE: replaced by template with mustache.js
-	function populatePostBrowser(browser, post_id, lazyload) {
-		
-		var title = $('<h4>');
-		title.text(postlistByGlobalId[post_id].title);
-		browser.append(title);
-		
-		var cmdContainer = $('<div class="cmdContainer">');
-		browser.append(cmdContainer);
-		
-		var linkToCenterMap = $('<a href="#" class="centerMap">');
-		linkToCenterMap.text("Center map");
-		linkToCenterMap.attr('data-post_id', post_id);
-		cmdContainer.append(linkToCenterMap);
 
-		var linkToEditPost = $('<a href="#" class="editPost">');
-		linkToEditPost.text("Edit");
-		linkToEditPost.attr('data-post_id', post_id);
-		cmdContainer.append(linkToEditPost);
-		if(isEditing) {
-			linkToEditPost.css("display", "block");
-		}
-
-		var imgContainer = $('<div class="imgContainer">');
-		browser.append(imgContainer);
-
-		var img = $('<img class="lazy" height="120" width="160">');
-		imgContainer.append(img);
-		img.attr('data-original', postlistByGlobalId[post_id].thumbnail);
-		if(!lazyload) {
-			img.attr('src', postlistByGlobalId[post_id].thumbnail);			
-		}
-		
-		var excerptContainer = $('<div class="excerptContainer">');
-		browser.append(excerptContainer);
-		excerptContainer.text(postlistByGlobalId[post_id].excerpt);
-	}
-      
-
-	// populate div for post editing
-	function populatePostEditor(editor, post_id) {
-		var buttonpressed;
-		var form = $('<form>', { id: 'post-editor-' + post_id }).css("color", "#707070").append(
-				$('<label>').text("Link:").css("font-weight", "bold"),
-				$('<br>'),
-				$('<input>', { type: "text", name: "url", value: postlistByGlobalId[post_id].url }).css("width", "100%"),
-				$('<br>'),
-				$('<label>').text("Title:").css("font-weight", "bold"),
-				$('<br>'),
-				$('<input>', { type: "text", name: "title", value: postlistByGlobalId[post_id].title }).css("width", "100%"),
-				$('<br>'),
-				$('<label>').text("Thumbnail url:").css("font-weight", "bold"),
-				$('<br>'),
-				$('<input>', { type: "text", name: "thumbnail", value: postlistByGlobalId[post_id].thumbnail }).css("width", "100%"),
-				$('<br>'),
-				$('<label>').text("Description:").css("font-weight", "bold"),
-				$('<br>'),
-				$('<input>', { type: "text", name: "excerpt", value: postlistByGlobalId[post_id].excerpt }).css("width", "100%"),
-				$('<div>').css("text-align", "center").append(
-						$('<input>', { type: "submit", name: "save", value: "Save" }).click(function() {
-							buttonpressed = $(this).attr('name');
-					    }),
-						$('<input>', { type: "submit", name: "cancel", value: "Cancel" }).click(function() {
-							buttonpressed = $(this).attr('name');
-					    })
-				)
-			);
-		
-		editor.append(
-				$('<hr>'),
-				form);
-
-		form.submit(function(event) {
-			event.preventDefault();
-			event.stopPropagation();
-			var post = $("div.postContent[data-post_id=" + post_id + "]");
-			if(buttonpressed == 'save') {
-				postlistByGlobalId[post_id].title = $("#post-editor-" + post_id + " input[name=title]").val();
-				postlistByGlobalId[post_id].thumbnail = $("#post-editor-" + post_id + " input[name=thumbnail]").val();
-				postlistByGlobalId[post_id].url = $("#post-editor-" + post_id + " input[name=url]").val();
-				postlistByGlobalId[post_id].excerpt = $("#post-editor-" + post_id + " input[name=excerpt]").val();
-				
-				sessionStorage.setItem("postlist", JSON.stringify(postlist));
-				setDirty();
-				
-				postlistByGlobalId[post_id].editing = isEditing;
-				postlistByGlobalId[post_id].lazyload = false;
-				post.replaceWith( Mustache.render(postContentTpl, postlistByGlobalId[post_id]) );
-			}
-			bind_postContent_events();
-			editor.remove();
-		});
-		
-	}
 
 	// Close sticky popup and open a new one if needed
 	function updateStickyPopup() {
@@ -640,11 +451,7 @@
 		if(stateObj.selectedPostId != -1) {
 			parms = parms + "&popup=" + stateObj.selectedPostId;
 		}
-		
-		//if(load_request) {
-		//	parms = parms + "&load=" + load_request;
-		//}
-		
+				
 		History.replaceState({}, document.title, "?" + parms);				
 	}
 	
@@ -675,182 +482,9 @@
 		}
 	}
 
-	// generate guid
-	var guid = (function() {
-		  function s4() {
-		    return Math.floor((1 + Math.random()) * 0x10000)
-		               .toString(16)
-		               .substring(1);
-		  }
-		  return function() {
-		    return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
-		           s4() + '-' + s4() + s4() + s4();
-		  };
-		})();
-	
-	
-	
-	// Edit mode
-	$("#editmode").click(function(e) {
-		if($(this).is(':checked')) {			
-			setEditing(true);
-		}
-		else {
-			setEditing(false);
-		}
-	});
-	
-	
-	function setEditing(edit) {
-		if(edit) {
-			isEditing = true;
-			$(".leaflet-draw").css("visibility", "visible");
-			$(".editPost").css("display", "block");
-			$("#editmode").prop('checked', true);
-		}
-		else {
-			isEditing = false;
-			$(".leaflet-draw").css("visibility", "hidden");
-			$(".editPost").css("display", "none");
-			$("#editmode").prop('checked', false);
-		}
-	}
-	
-	
-	function setDirty() {
-		sessionStorage.setItem("dirty", "1");
-		$("#editModeWarning").css("display", "block");
-		load_request = false;
-		updateHistory();
-	}
-		
-	map.on('draw:created', function (e) {
-		var marker = e.layer;
-		var newPost = {
-			latitude: e.layer.getLatLng().lat,
-			longitude: e.layer.getLatLng().lng,
-			guid: guid(),
-			title: "New link",
-			thumbnail: "",
-			url: "",
-			excerpt: "Click to update"
-		};
-		postlist.unshift(newPost);
-		
-		postlistByGlobalId[newPost.guid] = newPost;
-		marker.postId = newPost.guid;
-		markers[newPost.guid] = marker; 
-		initMarker(marker);
-		
-		sessionStorage.setItem("postlist", JSON.stringify(postlist));
-		setDirty();
 
-		refresh_postlist();
-		
-		var postContent = $("div.postContent[data-post_id=" + newPost.guid + "]");
-		postContent.off("click", postClicked);
-		var editLink = $("div.postContent[data-post_id=" + newPost.guid + "] a.editPost");
-		editLink.off("click");
-		var editor = $('<div>');
-		postContent.append(editor);
-		populatePostEditor(editor, newPost.guid);
 
-	});
 	
-	map.on('draw:edited', function (e) {
-		var layers = e.layers;
-	    layers.eachLayer(function (marker) {
-			postlistByGlobalId[marker.postId].latitude = marker.getLatLng().lat;
-			postlistByGlobalId[marker.postId].longitude = marker.getLatLng().lng;
-	    });
-		
-		sessionStorage.setItem("postlist", JSON.stringify(postlist));
-		setDirty();
-	});
-	
-
-	map.on('draw:deletestart', function (e) {
-		isDeleting = true;
-	});
-	
-	
-	map.on('draw:deleted', function (e) {
-		var layers = e.layers;
-	    layers.eachLayer(function (marker) {
-			var index;
-			var postId = marker.postId;
-			var post = postlistByGlobalId[postId];
-				
-			index = postlist.indexOf(post);
-			if (index > -1) {
-				postlist.splice(index, 1);
-			}
-
-			delete postlistByGlobalId[postId];
-			delete markers[postId];
-	    });
-		
-		sessionStorage.setItem("postlist", JSON.stringify(postlist));
-	    setDirty();
-		
-		refresh_postlist();
-		
-		isDeleting = false;
-	});
-	
-	$(".leaflet-draw a").click(function(e) {
-		e.stopPropagation();	
-	});
-	
-	
-	
-	// Import, export and clear
-	$("#exportJSON").on('click', function (event) {
-		jsonpData = 'data:application/javascript;charset=utf-8,' + encodeURIComponent('processJSON(' + JSON.stringify(postlist) + ');');
-
-		$(this).attr({
-			'href': jsonpData,
-			'target': '_blank'
-		});
-		
-		$("#editModeWarning").css("display", "none");
-		sessionStorage.removeItem("dirty");
-	});
-
-	$("#importJSON").on('click', function (event) {
-		event.preventDefault();
-		$("#importJSONinput").click();
-	});
-	
-	var fileInput = document.querySelector('#importJSONinput');
-	fileInput.onchange = function() {
-
-	    var reader = new FileReader();
-
-	    reader.onload = function() {
-	        eval(reader.result);
-			$("#editModeWarning").css("display", "none");
-			sessionStorage.clear();
-			sessionStorage.setItem("postlist", JSON.stringify(postlist));
-			stateObj.selectedPostId = -1;
-			map.removeLayer(stickyPopup);
-			load_request = false;
-			updateHistory();
-	    };
-
-	    reader.readAsText(fileInput.files[0]);    
-	};
-	
-	$("#resetData").on('click', function (event) {
-		event.preventDefault();
-		$("#editModeWarning").css("display", "none");
-		sessionStorage.clear();
-		stateObj.selectedPostId = -1;
-		map.removeLayer(stickyPopup);
-		load_request = false;
-		updateHistory();
-		processJSON([]);
-	});
 	
 	
 

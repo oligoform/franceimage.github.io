@@ -213,19 +213,6 @@
 		opacity: 0.5;
 	}
 	
-	.leaflet-draw { 
-		visibility: hidden;
-	}
-	
-	#importJSON, #exportJSON, #resetData  {
-		color: #ffffff;
-	}
-	
-	#importJSON.disabled, #resetData.disabled {
-		pointer-events: none;
-		cursor: default;
-		color: #adadad;
-	}	
 		
 	.centerMap {
 		background-image: url("images/geolocation24.png");
@@ -237,20 +224,3 @@
 		color: #808080;
 	}
 	
-	.editPost {
-		background-image: url("images/pencil24.png");
-		background-repeat: no-repeat;
-		padding-left: 26px;
-		line-height: 24px;
-		vertical-align: middle;
-		display: none;
-		color: #808080;
-	}
-	
-	#editModeWarning {
-		text-align: center;
-		background: #ff7800;
-		line-height: 1.7em;
-		font-size: 1.2em;
-		display: none;
-	}

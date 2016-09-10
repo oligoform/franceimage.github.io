@@ -12,8 +12,6 @@ jquery.history.js
 
 leaflet.rrose
 
-leaflet.draw
-
 L.Control.Zoomslider
 
 
@@ -21,8 +19,6 @@ L.Control.Zoomslider
 http://ajaxload.info/
 
 http://glyphicons.com/
-
-http://piwik.org/
 
 http://closure-compiler.appspot.com/home
 
