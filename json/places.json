@@ -6,8 +6,7 @@ processJSON([
     {
       "guid": "{{ post.guid }}",
       "title": "{{ post.title }}",
-      "latitude": "{{ post.latitude }}",
-      "longitude": "{{ post.longitude }}",
+      "latlng": "{{ post.latlng }}",
       "youtubeId": "{{ post.youtubeId }}"
     }
     {% unless forloop.last %},{% endunless %}

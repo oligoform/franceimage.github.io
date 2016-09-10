@@ -127,7 +127,9 @@
 		for (var i = 0; i < postlist.length; i++) {
 			postlist[i].url = "https://www.youtube.com/watch?v=" + postlist[i].youtubeId;
 			postlist[i].thumbnail = "https://i.ytimg.com/vi/" + postlist[i].youtubeId + "/hqdefault.jpg";
-			var m = L.marker([postlist[i].latitude, postlist[i].longitude], { icon: markerIcon });
+			var latlng = postlist[i].latlng.split(',');
+			latlng[0].trim(); latlng[1].trim();
+			var m = L.marker([latlng[0], latlng[1]], { icon: markerIcon });
 			postlistByGlobalId[postlist[i].guid] = postlist[i];
 			m.postId = postlist[i].guid;
 			markers[postlist[i].guid] = m; 
