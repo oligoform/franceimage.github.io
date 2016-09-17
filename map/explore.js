@@ -67,7 +67,7 @@
 	
 	// Load data
 	$.ajax({
-	    url: '/json/places.json',
+	    url: '/json/youtube.json',
 	    //jsonpCallback: "processJSON",
 	    jsonp: false,
 	    dataType: "jsonp"

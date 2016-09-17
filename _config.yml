@@ -9,6 +9,6 @@ exclude: ['CNAME', 'README.md']
 
 defaults:
   - scope:
-      path: "_posts/places"
+      path: "_posts/youtube"
     values:
-      type: "places"
+      type: "youtube"

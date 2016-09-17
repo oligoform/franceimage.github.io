@@ -1,6 +1,6 @@
 ---
 ---
-{% assign posts = site.posts | where:"type", "places" %}
+{% assign posts = site.posts | where:"type", "youtube" %}
 processJSON([
   {% for post in posts %}
     {
