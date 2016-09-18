@@ -135,8 +135,8 @@
 
 	// Map event handlers
 	map.on('moveend', function(e) {
-		stateObj.lat = map.getCenter().lat;
-		stateObj.lng = map.getCenter().lng;
+		stateObj.lat = map.getCenter().lat.toFixed(6);
+		stateObj.lng = map.getCenter().lng.toFixed(6);
 		stateObj.zoom = map.getZoom();
 		
 		updateHistory();
@@ -446,7 +446,7 @@
 	// Utilities
 	function updateHistory() {
 		// Update history
-		var parms = "view=" + map.getCenter().lat + "," + map.getCenter().lng + "," + map.getZoom();
+		var parms = "view=" + stateObj.lat + "," + stateObj.lng + "," + stateObj.zoom;
 		
 		if(stateObj.selectedPostId != -1) {
 			parms = parms + "&popup=" + stateObj.selectedPostId;
