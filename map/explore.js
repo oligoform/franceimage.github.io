@@ -9,7 +9,7 @@
 		selectedPostId: -1
 		};
 	
-	function get_request_parm(name) {
+	function getRequestParm(name) {
 	   if(name=(new RegExp('[?&]'+encodeURIComponent(name)+'=([^&]*)')).exec(location.search)) {
 	      return decodeURIComponent(name[1]);
 	   }
@@ -18,17 +18,17 @@
 	   }
 	}
 	
-	var view_request = get_request_parm('view');
-	if(view_request) {
-		var split_view_request = view_request.split(',');
-		stateObj.lat = split_view_request[0];
-		stateObj.lng = split_view_request[1];
-		stateObj.zoom = split_view_request[2];
+	var viewRequest = getRequestParm('view');
+	if(viewRequest) {
+		var splitViewRequest = viewRequest.split(',');
+		stateObj.lat = splitViewRequest[0];
+		stateObj.lng = splitViewRequest[1];
+		stateObj.zoom = splitViewRequest[2];
 	}
 	
-	var postid_request = get_request_parm('popup');
-	if(postid_request) {
-		stateObj.selectedPostId = postid_request;
+	var postIdRequest = getRequestParm('popup');
+	if(postIdRequest) {
+		stateObj.selectedPostId = postIdRequest;
 	}
 
 	/**
@@ -94,7 +94,7 @@
 			initMarker(m);
 		}
 				
-		refresh_postlist();	
+		refreshPostlist();	
 	}
 	
 	
@@ -143,7 +143,7 @@
 	});
 	
 	map.on('moveend resize', function(e) {
-		refresh_postlist();
+		refreshPostlist();
 	});
 	
 	map.on('popupclose', popupClosed);
@@ -226,7 +226,7 @@
 	}
 		
 	// Refresh post listing on page load or when the map has moved or when an item has been removed
-	function refresh_postlist() {
+	function refreshPostlist() {
 		var postListContainer = $("#postList");
 		
 		if (postListContainer[0]) {
@@ -248,13 +248,13 @@
 			}
 			setTimeout(function(){ scrollToSelectedOrFirst(); }, 200); //timeout needed for firefox
 
-			bind_postContent_events();
+			bindPostContentEvents();
 		}
 	}
 	
 
 	// Bind events to postContent 
-	function bind_postContent_events() {
+	function bindPostContentEvents() {
 		// add event handlers
 		$("img.lazy").lazyload({
 			effect : "fadeIn"
