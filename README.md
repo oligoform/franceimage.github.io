@@ -1,2 +1,2 @@
 
-Have a look at my [collection](http://franceimage.github.io/map) of beautiful videos on France heritage and natural sites (links from [youtube](http://www.youtube.com))
+[Collection](http://franceimage.github.io/map) of beautiful videos on France heritage and natural sites (links from [youtube](http://www.youtube.com))
