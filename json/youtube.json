@@ -1,6 +1,7 @@
 ---
 ---
 {% assign posts = site.posts | where:"type", "youtube" %}
+/* Number of places: {{ posts | size }} */
 processJSON([
   {% for post in posts %}
     {
