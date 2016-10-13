@@ -1,0 +1,25 @@
+---
+---
+{% assign posts = site.posts | where:"type", "youtube" %}
+{
+  "type": "FeatureCollection",
+  "features": [
+  {% for post in posts %}
+    {
+      "type": "Feature",
+      "properties": {
+         name: "{{ post.title }}"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        {% assign coord = post.latlng | split: ", " %}
+          {{ coord[1] }},
+          {{ coord[0] }}
+        ]
+      }
+    }
+    {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+  ]
+}
