@@ -8,7 +8,7 @@
     {
       "type": "Feature",
       "properties": {
-         name: "{{ post.title }}"
+         "name": "{{ post.title }}"
       },
       "geometry": {
         "type": "Point",
