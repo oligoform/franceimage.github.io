@@ -11,7 +11,7 @@
          "guid": "{{ post.guid }}",
          "name": "{{ post.title }}",
          "url": "https://www.youtube.com/watch?v={{ post.youtubeId }}",
-		 "thumbnail": "https://i.ytimg.com/vi/{{ post.youtubeId }}/hqdefault.jpg"
+         "thumbnail": "https://i.ytimg.com/vi/{{ post.youtubeId }}/hqdefault.jpg"
       },
       "geometry": {
         "type": "Point",
