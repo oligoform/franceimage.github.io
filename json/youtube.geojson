@@ -1,4 +1,4 @@
----
+﻿---
 ---
 {% assign posts = site.posts | where:"type", "youtube" %}
 {
