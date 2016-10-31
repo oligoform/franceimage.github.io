@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: redirect
+redirect_to: "map"
 title: Welcome to FranceImage
 ---
 
