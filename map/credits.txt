@@ -2,17 +2,17 @@ http://leafletjs.com/
 
 http://www.mapquest.com/
 
-http://cssreset.com
+http://cssreset.com 
 
 http://code.jquery.com/jquery-2.1.0.js
 
 //cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js (http://www.appelsiini.net/projects/lazyload)
 
-jquery.history.js
+jquery.history.js (https://github.com/browserstate/history.js/)
 
-leaflet.rrose
+leaflet.rrose (https://github.com/erictheise/rrose)
 
-L.Control.Zoomslider
+L.Control.Zoomslider (http://kartena.github.io/Leaflet.zoomslider/)
 
 
 
