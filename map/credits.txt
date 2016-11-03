@@ -2,7 +2,7 @@ http://leafletjs.com/
 
 http://www.mapquest.com/
 
-http://cssreset.com 
+http://cssreset.com
 
 http://code.jquery.com/jquery-2.1.0.js
 
@@ -23,3 +23,7 @@ http://glyphicons.com/
 http://closure-compiler.appspot.com/home
 
 https://www.guidgenerator.com/online-guid-generator.aspx
+
+https://git-scm.com/
+
+https://atom.io/
