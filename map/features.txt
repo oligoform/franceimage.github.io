@@ -1,0 +1,1 @@
+Locator suitable for large screen / horizontal orientation / mouse device

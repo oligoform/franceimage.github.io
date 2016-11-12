@@ -1,0 +1,2 @@
+- When a selected marker is clicked, it should show the (hover) tooltip
+- It should possible to select/deselect the marker from the list item
