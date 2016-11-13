@@ -2,3 +2,4 @@
 - It should possible to select/deselect the marker from the list item.
 - Optimize lazyloading. Showing last image should not load of the previous images.
 - Marker size should decrease with zoom.
+- Should check if selected marker is visible (when shared link is loaded). Center the map on marker if not visible.
