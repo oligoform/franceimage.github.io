@@ -234,7 +234,6 @@
 		
 			for (var i = 0; i < postlist.length; i++) {
 				if(map.getBounds().contains(markers[postlist[i].guid].getLatLng())) {
-					postlist[i].lazyload = true;
 					postListContainer.append( Mustache.render(postContentTpl, postlist[i]) );				
 				}
 			}
@@ -257,7 +256,9 @@
 	function bindPostContentEvents() {
 		// add event handlers
 		$("img.lazy").lazyload({
-			effect : "fadeIn"
+			effect : "fadeIn",
+			skip_invisible: true,
+			container: $("#postList")
 		});
 		
 		$("div.postContent").on("click", postClicked);
@@ -339,7 +340,6 @@
 		if(stateObj.selectedPostId != -1 && markers[stateObj.selectedPostId]) {
 			// Create popup			
 			stickyPopup = new L.Rrose({ offset: new L.Point(0,-10), closeButton: false, autoPan: false, className: 'sticky' });	
-			postlistByGlobalId[stateObj.selectedPostId].lazyload = false;
 			stickyPopup.setContent(Mustache.render(stickyTooltipTpl, postlistByGlobalId[stateObj.selectedPostId]) );
 			stickyPopup.setLatLng(markers[stateObj.selectedPostId].getLatLng());
 			stickyPopup.post_id = stateObj.selectedPostId;
