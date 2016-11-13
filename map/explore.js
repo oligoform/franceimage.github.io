@@ -106,10 +106,7 @@
 			map.dragging.disable();
 			// Create popup
 			if(e.target.postId != stateObj.selectedPostId) {
-				tooltipPopup = new L.Rrose({ offset: new L.Point(0,-10), closeButton: false, autoPan: false });		
-				tooltipPopup.setContent(Mustache.render(tooltipTpl, postlistByGlobalId[e.target.postId]) );
-				tooltipPopup.setLatLng(e.target.getLatLng());
-				tooltipPopup.openOn(map);
+				showTooltip(e.target.postId);
 			}
 			// Style marker and post in postlist
 			if(e.target.postId != stateObj.selectedPostId) {
@@ -163,6 +160,7 @@
 	
 	// Marker clicked
 	function markerClicked(e) {
+		var doShowTooltip = false;
 		if (stateObj.selectedPostId == -1) {
 			stateObj.selectedPostId = e.target.postId;
 			$("div.postContent[data-post_id=" + stateObj.selectedPostId + "]").removeClass("hover");
@@ -177,6 +175,7 @@
 				markers[stateObj.selectedPostId].setIcon(markerHoverIcon);
 				markers[stateObj.selectedPostId]._bringToFront();
 				stateObj.selectedPostId = -1;
+				doShowTooltip = true;
 			}
 			else {
 				$("div.postContent[data-post_id=" + stateObj.selectedPostId + "]").removeClass("selected");
@@ -190,6 +189,9 @@
 		}
 		
 		updateStickyPopup();
+		if(doShowTooltip) {
+			showTooltip(e.target.postId);
+		}
 		
 		if (stateObj.selectedPostId != -1) { scrollToSelectedOrFirst(); }
 		
@@ -329,7 +331,15 @@
 	}
 	
 
-
+	// Show tooltip of postId
+	function showTooltip(post_id) {
+		tooltipPopup = new L.Rrose({ offset: new L.Point(0,-10), closeButton: false, autoPan: false });		
+		tooltipPopup.setContent(Mustache.render(tooltipTpl, postlistByGlobalId[post_id]) );
+		tooltipPopup.setLatLng(markers[post_id].getLatLng());
+		tooltipPopup.openOn(map);
+	}
+	
+	
 	// Close sticky popup and open a new one if needed
 	function updateStickyPopup() {
 		map.off('popupclose', popupClosed);
