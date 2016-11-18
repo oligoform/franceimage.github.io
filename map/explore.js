@@ -143,6 +143,12 @@
 		refreshPostlist();
 	});
 	
+	map.on('zoomend', function(e) {
+		if(stateObj.selectedPostId != 1) {
+			map.setView(markers[stateObj.selectedPostId].getLatLng(), map.getZoom());
+		}
+	});
+	
 	map.on('popupclose', popupClosed);
 	
 	function popupClosed(e) {
