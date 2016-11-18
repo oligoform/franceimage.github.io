@@ -132,6 +132,7 @@
 
 	// Map event handlers
 	map.on('moveend', function(e) {
+		//console.log('moveend');
 		stateObj.lat = map.getCenter().lat.toFixed(6);
 		stateObj.lng = map.getCenter().lng.toFixed(6);
 		stateObj.zoom = map.getZoom();
@@ -140,10 +141,12 @@
 	});
 	
 	map.on('moveend resize', function(e) {
+		//console.log('moveend resize');
 		refreshPostlist();
 	});
 	
 	map.on('zoomend', function(e) {
+		//console.log('zoomend');
 		if(stateObj.selectedPostId != 1) {
 			map.setView(markers[stateObj.selectedPostId].getLatLng(), map.getZoom());
 		}
@@ -204,7 +207,7 @@
 		updateHistory();
 	}
 	
-	// Center map on post
+	// Center map on postId and make it selected
 	function centerMapOnPost(postId) {
 		map.setView(markers[postId].getLatLng(), map.getZoom());
 
