@@ -18,7 +18,7 @@
 	   }
 	}
 	
-	var viewRequest = getRequestParm('view');
+	var viewRequest = getRequestParm('llz');
 	if(viewRequest) {
 		var splitViewRequest = viewRequest.split(',');
 		stateObj.lat = splitViewRequest[0];
@@ -26,7 +26,7 @@
 		stateObj.zoom = splitViewRequest[2];
 	}
 	
-	var postIdRequest = getRequestParm('popup');
+	var postIdRequest = getRequestParm('sel');
 	if(postIdRequest) {
 		stateObj.selectedPostId = postIdRequest;
 	}
@@ -456,10 +456,10 @@
 	// Utilities
 	function updateHistory() {
 		// Update history
-		var parms = "view=" + stateObj.lat + "," + stateObj.lng + "," + stateObj.zoom;
+		var parms = "llz=" + stateObj.lat + "," + stateObj.lng + "," + stateObj.zoom;
 		
 		if(stateObj.selectedPostId != -1) {
-			parms = parms + "&popup=" + stateObj.selectedPostId;
+			parms = parms + "&sel=" + stateObj.selectedPostId;
 		}
 				
 		History.replaceState({}, document.title, "?" + parms);				

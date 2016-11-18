@@ -5,3 +5,4 @@
 - Should check if selected marker is visible (when shared link is loaded). Center the map on marker if not visible.
 - When map is zoomed in after centering a marker, marker should be centered again.
 - Should support following notation [youtubeId: "ORWiYAs7ZD0&t=20s"] 
+- Should support argument to load an external jsonp file
