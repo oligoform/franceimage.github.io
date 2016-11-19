@@ -86,7 +86,7 @@
 	
 	#mapView {
 		bottom: 0;
-		left: 646px;
+		left: 400px;
 		position: fixed;
 		right: 0;
 		top: 60px;
@@ -100,7 +100,7 @@
 	
 	#listingView {
 		position: relative;
-		width: 646px;
+		width: 400px;
 		z-index: 2;
 	}
 	
