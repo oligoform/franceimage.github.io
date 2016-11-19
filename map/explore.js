@@ -144,13 +144,14 @@
 		//console.log('moveend resize');
 		refreshPostlist();
 	});
-	
-	map.on('zoomend', function(e) {
-		//console.log('zoomend');
-		if(stateObj.selectedPostId != 1) {
-			map.setView(markers[stateObj.selectedPostId].getLatLng(), map.getZoom());
-		}
-	});
+
+// Not a good idea: seems to block map loading
+//	map.on('zoomend', function(e) {
+//		//console.log('zoomend');
+//		if(stateObj.selectedPostId != 1) {
+//			map.setView(markers[stateObj.selectedPostId].getLatLng(), map.getZoom());
+//		}
+//	});
 	
 	map.on('popupclose', popupClosed);
 	
