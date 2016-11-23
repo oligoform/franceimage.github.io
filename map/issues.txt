@@ -6,6 +6,7 @@
 - Should suggest back button when going to youtube 
 - Should have hints to learn while using the map
 - Should have menus to give access to extended features/links
+- Should check id unicity (and spit a warning in javascript console)
 
 
 - When a selected marker is clicked, it should show the (hover) tooltip. (DONE: 28b6b1aade95295acb95dedae65fcf1fbb48acbf)
