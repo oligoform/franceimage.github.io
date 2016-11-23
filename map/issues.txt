@@ -10,6 +10,6 @@
 
 
 - When a selected marker is clicked, it should show the (hover) tooltip. (DONE: 28b6b1aade95295acb95dedae65fcf1fbb48acbf)
-- Optimize lazyloading. Showing last image should not load of the previous images. (DONE: 680b0dd99033d67c0469086ea59b51cdef0de730)
-- When map is zoomed in after centering a marker, marker should be centered again. (DONE: 196434e485f8e1560256c9e13dcac5d0015bf6a2)
+- Optimize lazyloading. Showing last image should not load the previous images. (DONE: 680b0dd99033d67c0469086ea59b51cdef0de730)
+- When map is zoomed in after centering a marker, marker should be centered again. (DONE: 196434e485f8e1560256c9e13dcac5d0015bf6a2) - undone because of side effects.
 
