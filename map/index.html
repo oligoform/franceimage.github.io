@@ -42,7 +42,7 @@
 			<a href="#" class="centerMap" data-postId="{{ guid }}">Center map</a>
 		</div>
 		<div class="imgContainer">
-			<img class="lazy" height="120" width="160" data-original="{{ thumbnail }}" style="display: inline;" /> 
+			<img class="lazy" height="120" width="160" data-original="{{ thumbnail }}" style="display: inline;" {{ ^lazyload }}src="{{ thumbnail }}"{{ /lazyload }} /> 
 		</div>
 		<div class="excerptContainer">{{ excerpt }}</div>
 	</div>
