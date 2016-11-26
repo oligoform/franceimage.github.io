@@ -37,7 +37,7 @@
 
             elements.each(function() {
                 var $this = $(this);
-                if (settings.skip_invisible && !$this.is(":visible")) {
+                if (settings.skip_invisible && !$.inviewport(this, settings)) {
                     return;
                 }
                 if ($.abovethetop(this, settings) ||
