@@ -270,7 +270,7 @@
 		// add event handlers
 		$("img.lazy").lazyload({
 			effect : "fadeIn",
-			container: $("#postList")
+			skip_invisible  : true
 		});
 		
 		$("div.postContent").on("click", postClicked);
