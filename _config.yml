@@ -9,3 +9,8 @@ kramdown:
   
 exclude: ['CNAME', 'README.md']
 
+defaults:
+  - scope:
+      path: "_posts/youtube"
+    values:
+      type: "youtube"

@@ -1,0 +1,15 @@
+---
+---
+{% assign posts = site.posts | where:"type", "youtube" %}
+/* Number of places: {{ posts | size }} */
+processJSON([
+  {% for post in posts %}
+    {
+      "guid": "{{ post.guid }}",
+      "title": "{{ post.title }}",
+      "latlng": "{{ post.latlng }}",
+      "youtubeId": "{{ post.youtubeId }}"
+    }
+    {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]);

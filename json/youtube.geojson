@@ -1,0 +1,28 @@
+---
+---
+{% assign posts = site.posts | where:"type", "youtube" %}
+{
+  "type": "FeatureCollection",
+  "features": [
+  {% for post in posts %}
+    {
+      "type": "Feature",
+      "properties": {
+         "guid": "{{ post.guid }}",
+         "name": "{{ post.title }}",
+         "url": "https://www.youtube.com/watch?v={{ post.youtubeId }}",
+         "thumbnail": "https://i.ytimg.com/vi/{{ post.youtubeId }}/hqdefault.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        {% assign coord = post.latlng | split: ", " %}
+          {{ coord[1] }},
+          {{ coord[0] }}
+        ]
+      }
+    }
+    {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+  ]
+}
