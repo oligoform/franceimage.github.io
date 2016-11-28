@@ -67,7 +67,7 @@
 	
 	// Load data
 	$.ajax({
-	    url: '/json/youtube.json',
+	    url: 'https://yafred.github.io/interactive-maps/json/youtube.json',
 	    //jsonpCallback: "processJSON",
 	    jsonp: false,
 	    dataType: "jsonp"
