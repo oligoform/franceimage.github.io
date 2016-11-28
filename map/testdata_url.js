@@ -1,4 +1,4 @@
 ---
 ---
 
-testdata_url = "{{ "/json/youtube.json" | relative_url }}";
+testdata_url = "https://yafred.github.io/interactive-maps/json/youtube.json";
