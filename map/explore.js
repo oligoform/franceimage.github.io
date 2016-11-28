@@ -39,9 +39,12 @@
         zoomControl: false,
 		zoomsliderControl: true
         });
+	L.control.scale().addTo(map);
 		
-	var mapquest = MQ.mapLayer();		
-	map.addLayer(mapquest);
+	// create the tile layer with correct attribution
+	L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
 	
 	map.setView(new L.LatLng(stateObj.lat, stateObj.lng), stateObj.zoom);
 
@@ -67,7 +70,7 @@
 	
 	// Load data
 	$.ajax({
-	    url: 'https://yafred.github.io/interactive-maps/json/youtube.json',
+	    url: testdata_url,
 	    //jsonpCallback: "processJSON",
 	    jsonp: false,
 	    dataType: "jsonp"
@@ -132,7 +135,6 @@
 
 	// Map event handlers
 	map.on('moveend', function(e) {
-		//console.log('moveend');
 		stateObj.lat = map.getCenter().lat.toFixed(6);
 		stateObj.lng = map.getCenter().lng.toFixed(6);
 		stateObj.zoom = map.getZoom();
@@ -141,32 +143,9 @@
 	});
 	
 	map.on('moveend resize', function(e) {
-		//console.log('moveend resize');
 		refreshPostlist();
 	});
 
-// Not a good idea: seems to block map loading
-//	map.on('zoomend', function(e) {
-//		//console.log('zoomend');
-//		if(stateObj.selectedPostId != 1) {
-//			map.setView(markers[stateObj.selectedPostId].getLatLng(), map.getZoom());
-//		}
-//	});
-	
-	map.on('popupclose', popupClosed);
-	
-	function popupClosed(e) {
-		if(e.popup === stickyPopup) {
-			if (stateObj.selectedPostId != -1) {
-				$("div.postContent[data-postId=" + stateObj.selectedPostId + "]").removeClass("selected");
-				markers[stateObj.selectedPostId]._resetZIndex();
-				markers[stateObj.selectedPostId].setIcon(markerIcon);
-				stateObj.selectedPostId = -1;
-				updateHistory();
-			}
-		}
-	}
-	
 	
 	// Marker clicked
 	function markerClicked(e) {
@@ -352,10 +331,8 @@
 	
 	// Close sticky popup and open a new one if needed
 	function updateStickyPopup() {
-		map.off('popupclose', popupClosed);
 		map.closePopup(tooltipPopup);
 		map.removeLayer(stickyPopup);
-		map.on('popupclose', popupClosed);
 		
 		if(stateObj.selectedPostId != -1 && markers[stateObj.selectedPostId]) {
 			// Create popup			
