@@ -53,7 +53,7 @@
 	var stickyPopup = false;
 	
 	// Arrays of posts
-	var postlist = [];
+	var postlist = []; // original dataset
 	var markers = {};	// key: postId	
 	var postlistByGlobalId = {}; // key: postId	
 	
@@ -96,8 +96,8 @@
 			markers[postlist[i].guid] = m; 
 			initMarker(m);
 		}
-				
-		refreshPostlist();	
+		
+		refreshPostlistView();	
 	}
 	
 	
@@ -143,7 +143,7 @@
 	});
 	
 	map.on('moveend resize', function(e) {
-		refreshPostlist();
+		refreshPostlistView();	
 	});
 
 	
@@ -216,8 +216,8 @@
 		updateHistory();
 	}
 		
-	// Refresh post listing on page load or when the map has moved or when an item has been removed
-	function refreshPostlist() {
+	// Refresh post listing on page load or when the map has moved
+	function refreshPostlistView() {
 		var postListContainer = $("#postList");
 		
 		if (postListContainer[0]) {

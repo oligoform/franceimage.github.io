@@ -1,4 +1,4 @@
-- Lazy loading does not work
+
 - It should possible to select/deselect the marker from the list item.
 - Marker size should decrease with zoom.
 - Should check if selected marker is visible (when shared link is loaded). Center the map on marker if not visible.
@@ -10,7 +10,8 @@
 - Should check id unicity (and spit a warning in javascript console)
 
 
-- When a selected marker is clicked, it should show the (hover) tooltip. (DONE: 28b6b1aade95295acb95dedae65fcf1fbb48acbf)
-- Optimize lazyloading. Showing last image should not load the previous images. (DONE: 680b0dd99033d67c0469086ea59b51cdef0de730)
-- When map is zoomed in after centering a marker, marker should be centered again. (DONE: 196434e485f8e1560256c9e13dcac5d0015bf6a2) - undone because of side effects.
+- Lazy loading does not work (DONE). There is still a problem: when scrolling down, more images than needed are loaded (Click on Antibes in the testdata). 
+- When a selected marker is clicked, it should show the (hover) tooltip. (DONE)
+- Optimize lazyloading. Showing last image should not load the previous images. (DONE)
+- When map is zoomed in after centering a marker, marker should be centered again. (DONE) - undone because of side effects.
 
