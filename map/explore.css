@@ -118,7 +118,7 @@
 		text-align: center;
 	}
 	
-	.sticky .leaflet-rrose-content-wrapper, .sticky .leaflet-rrose-tip  {
+	.sticky .leaflet-popup-content-wrapper  {
 		background-color: #FFFF99;
 	}
 	

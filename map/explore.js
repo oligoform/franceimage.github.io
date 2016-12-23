@@ -257,7 +257,7 @@
 		$("div.postContent").on("mouseenter", function(e) {
 			var postId = $(this).attr("data-postId");
 			if(postId != stateObj.selectedPostId) {
-				tooltipPopup = new L.Rrose({ offset: new L.Point(0,-10), closeButton: false, autoPan: false });	
+				tooltipPopup = L.responsivePopup({ offset: new L.Point(10,10), closeButton: false, autoPan: false });	
 				var title = postlistByGlobalId[postId].title;
 				tooltipPopup.setContent(title);
 				tooltipPopup.setLatLng(markers[postId].getLatLng());
@@ -322,7 +322,7 @@
 
 	// Show tooltip of postId
 	function showTooltip(postId) {
-		tooltipPopup = new L.Rrose({ offset: new L.Point(0,-10), closeButton: false, autoPan: false });		
+		tooltipPopup =  L.responsivePopup({ offset: new L.Point(10,10), closeButton: false, autoPan: false });		
 		tooltipPopup.setContent(Mustache.render(tooltipTpl, postlistByGlobalId[postId]) );
 		tooltipPopup.setLatLng(markers[postId].getLatLng());
 		tooltipPopup.openOn(map);
@@ -336,7 +336,7 @@
 		
 		if(stateObj.selectedPostId != -1 && markers[stateObj.selectedPostId]) {
 			// Create popup			
-			stickyPopup = new L.Rrose({ offset: new L.Point(0,-10), closeButton: false, autoPan: false, className: 'sticky' });	
+			stickyPopup =  L.responsivePopup({ offset: new L.Point(10,10), closeButton: false, autoPan: false, className: 'sticky' });	
 			postlistByGlobalId[stateObj.selectedPostId].lazyload = false;
 			stickyPopup.setContent(Mustache.render(stickyTooltipTpl, postlistByGlobalId[stateObj.selectedPostId]) );
 			stickyPopup.setLatLng(markers[stateObj.selectedPostId].getLatLng());
