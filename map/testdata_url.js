@@ -1,4 +1,4 @@
 ---
 ---
 
-testdata_url = "https://yafred.github.io/interactive-maps/json/youtube.json";
+testdata_url = "https://yafred.github.io/interactive-maps/json/video.json";
