@@ -2,7 +2,7 @@
 - It should possible to select/deselect the marker from the list item.
 - Marker size should decrease with zoom.
 - Should check if selected marker is visible (when shared link is loaded). Center the map on marker if not visible.
-- Should support following notation [videoId: "ORWiYAs7ZD0&t=20s"] 
+- Should support following notation [youtubeId: "ORWiYAs7ZD0&t=20s"] 
 - Should support argument to load an external jsonp file
 - Should suggest back button when going to youtube 
 - Should have hints to learn while using the map

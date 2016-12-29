@@ -86,8 +86,8 @@
 		postlistByGlobalId = {}; // key: postId	
 		
 		for (var i = 0; i < postlist.length; i++) {
-			postlist[i].url = "https://www.youtube.com/watch?v=" + postlist[i].videoId;
-			postlist[i].thumbnail = "https://i.ytimg.com/vi/" + postlist[i].videoId + "/hqdefault.jpg";
+			postlist[i].url = "https://www.youtube.com/watch?v=" + postlist[i].youtubeId;
+			postlist[i].thumbnail = "https://i.ytimg.com/vi/" + postlist[i].youtubeId + "/hqdefault.jpg";
 			var latlng = postlist[i].latlng.split(',');
 			latlng[0].trim(); latlng[1].trim();
 			var m = L.marker([latlng[0], latlng[1]], { icon: markerIcon });
