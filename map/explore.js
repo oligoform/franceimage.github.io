@@ -146,6 +146,10 @@
 		refreshPostlistView();	
 	});
 
+	map.on('click', function(e) {
+		updateStickyPopup();	
+	});
+
 	
 	// Marker clicked
 	function markerClicked(e) {
