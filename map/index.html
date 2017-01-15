@@ -28,51 +28,143 @@
 	<!--[if lte IE 8]><link rel="stylesheet" href="lib/L.Control.Zoomslider.ie.css" /><![endif]-->
 	<script src="lib/L.Control.Zoomslider.js" type="text/javascript"></script>
 
+	<!-- Sidebar -->
+	<link rel="stylesheet" href="lib/leaflet-sidebar.css" />
+	<script src="lib/leaflet-sidebar.js" type="text/javascript"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
 	<!-- Templating -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js" type="text/javascript"></script>
 
 	<script id="postContentTpl" type="text/mustache">
 	<div class="postContent clickable" data-postId="{{ guid }}">
-		<h4>{{ title }}</h4>
-		<div class="cmdContainer">
-			<a href="#" class="centerMap" data-postId="{{ guid }}">Center map</a>
-		</div>
 		<div class="imgContainer">
-			<img class="lazy" height="120" width="160" data-original="{{ thumbnail }}" style="display: inline;" {{ ^lazyload }}src="{{ thumbnail }}"{{ /lazyload }} /> 
-			<img style="height: 30px; width: 30px; position: absolute; bottom: 0px; left: 65px" src="images/YouTube-social-squircle_red_48px.png" />
+			<img class="lazy" data-original="{{ thumbnail }}" style="display: inline;" {{ ^lazyload }}src="{{ thumbnail }}"{{ /lazyload }} /> 
 		</div>
-		<div class="excerptContainer">{{ excerpt }}</div>
+		<h4>{{ title }}</h4>
 	</div>
 	</script>
 
 	<script id="stickyTooltipTpl" type="text/mustache">
-		{{ title }}
+	<div data-postId="{{ guid }}">
+		<div class="title">{{ title }}</div>
+		<div class="imgContainer">
+			<img class="lazy" data-original="{{ thumbnail }}" src="{{ thumbnail }}" /> 
+		</div>
+		<div class="cmdContainer">
+			<a href="javascript:centerMapOnPost('{{ guid }}')"><i class="fa fa-dot-circle-o"></i></a>
+			<a href="javascript:followLinkFromPost('{{ guid }}')"><i class="fa fa-youtube-play"></i></a>
+		</div>
+	</div>
  	</script>
 
 	<script id="tooltipTpl" type="text/mustache">
-		{{ title }}
+	<div data-postId="{{ guid }}">
+		<div class="title">{{ title }}</div>
+		<div class="imgContainer">
+			<img class="lazy" data-original="{{ thumbnail }}" src="{{ thumbnail }}" /> 
+		</div>
+	</div>
+ 	</script>
+ 	
+	<script id="channelTpl" type="text/mustache">
+	<div class="channel" data-channelId="{{ id }}">
+		<div class="imgContainer"><img src="{{ thumbnail }}" /></div>
+		<div class="titleContainer">{{ title }}</div>
+	</div>
  	</script>
 	
 	<!-- My stuff -->
 	<link rel="stylesheet" href="explore.css" />
-	<script src="testdata_url.js"></script>
+	<script src="data/channels.js"></script>
 	
 </head>
 <body>
-	<div id="page">
-		<div id="header">
-		<ul>
-			<li><form id="searchform">Locate <input type="search" id="search" name="search" autocorrect="off" placeholder="zipcode or placename"/></form></li>
-		</ul>
-		</div>
-		<div id="content">
-			<div id="mapView"><div id="mapCanvas"></div></div>
-			<div id="listingView">
-				<div id="postList"></div>
-			</div>
-		</div>
-	</div>
-	<div id="infoPanel"><div id="closeInfoPanel">X</div><div id="searchResults"></div></div>
+    <div id="sidebar" class="sidebar collapsed">
+        <!-- Nav tabs -->
+        <div class="sidebar-tabs">
+            <ul role="tablist">
+                <li><a href="#channelPanel" role="tab"><i class="fa fa-bars"></i></a></li>
+                <li><a href="#aroundPanel" role="tab"><i class="fa fa-dot-circle-o"></i></a></li>
+                <li><a href="#postPanel" role="tab"><i class="fa fa-list"></i></a></li>
+                <li><a href="#info" role="tab"><i class="fa fa-info"></i></a></li>
+            </ul>
+
+            <ul role="tablist">
+                <li><a href="#about" role="tab"><i class="fa fa-question-circle"></i></a></li>
+             </ul>
+        </div>
+
+        <!-- Tab panes -->
+        <div class="sidebar-content">
+            <div class="sidebar-pane" id="channelPanel">
+            	<div class="sidebar-header">
+            	<i class="fr">Liste des chaînes</i> - <i class="en">Channel List</i>
+            	</div>
+             	<div id="channelList"></div>           	
+            </div>
+
+            <div class="sidebar-pane" id="aroundPanel">
+            	<div class="sidebar-header">
+            	<p class="fr">Videos triées par distance au centre de la carte</p>
+            	<p class="en">Videos sorted by proximity to the center of the map</p>
+            	</div>
+            	<div id="aroundList"></div> 
+            </div>
+
+            <div class="sidebar-pane" id="postPanel">
+            	<div class="sidebar-header">
+            	<p class="fr">Videos triées par date de publication</p>
+            	<p class="en">Videos sorted by publish date</p>
+            	</div>
+           		<div id="postList"></div> 
+            </div>
+
+            <div class="sidebar-pane text-panel" id="info">
+			<section class="fr">
+            <p>Quelques trucs ...</p>
+            <p>Vous pouvez passer sur les points avec la souris et cliquer dessus. Vous pouvez aussi amener les points au centre de la carte. Dans les 2 cas, une popup apparaîtra.</p>
+            <p>Popup: cliquez sur <i class="fa fa-youtube-play"></i> pour voir la video. Une fois sur youtube, utilisez le bouton back pour retrouver la carte dans le même état.</p>
+            <p>Popup: cliquez sur <i class="fa fa-dot-circle-o"></i> centrer la carte sur ce point (utile quand vous allez zoomer).</p>
+            <p>Popup: cliquez sur la carte pour la cacher.</p>
+            <p>Barre latérale: cliquez sur <i class="fa fa-bars"></i> pour voir une autre liste.</p>
+            <p>Barre latérale: cliquez sur <i class="fa fa-dot-circle-o"></i> voir la liste des videos. La video la plus proche de centre de la carte vient en premier. Cliquer sur la video pour la fixer sur la carte.</p>
+            <p>Barre latérale: cliquez sur <i class="fa fa-list"></i> voir la liste des videos. La plus récente vient en premier.</p>  
+            </section>        
+            <section class="en">
+            <p>A few hints ...</p>
+            <p>Hover on the markers and click on them. Alternatively, bring the markers to the center of the map. This will open a popup.</p>
+            <p>Popup: click on <i class="fa fa-youtube-play"></i> to watch the video. When you are on youtube, use back button to find your map in the same state.</p>
+            <p>Popup: click on <i class="fa fa-dot-circle-o"></i> to center the map on this point (useful if you want to zoom in).</p>
+            <p>Popup: click on the map to close it.</p>
+            <p>Sidebar: click on <i class="fa fa-bars"></i> to select another list of videos.</p>
+            <p>Sidebar: click on <i class="fa fa-dot-circle-o"></i> to show the list of videos. The nearest to the center of the map comes first. Click on a video to pin it on the map.</p>
+            <p>Sidebar: click on <i class="fa fa-list"></i> to show the list of videos. The first (most recent) in the playlist comes first.</p>          
+			</section>
+            </div>
+ 
+            <div class="sidebar-pane text-panel" id="about">
+			<section class="fr">
+            <p>Salut,</p>
+            <p>Ceci est un projet open-source qui géocalise des vidéos youtube montrant des endroits d'intérêt en France (villages, monuments, sites naturel, etc ...).</p>
+            <p>Vous pouvez contribuer en proposant des playlists youtube cohérentes ou en remplissant le champ latlng des entrées des <a href="https://github.com/franceimage/franceimage.github.io/tree/master/map/data">playlists existantes</a>.</p>
+			<p>Les commentaires sont les bienvenus: franceimage.com<i class="fa fa-at"></i>gmail.com.
+			</section>
+            <section class="en">
+            <p>Hi,</p>
+            <p>This is an open-source project to geolocate videos of interest about France (villages, monuments, natural sites, etc ...).</p>
+            <p>You can contribute by providing consistent youtube playlists about things in France, or by filling the latlng attribute of the entries in the <a href="https://github.com/franceimage/franceimage.github.io/tree/master/map/data">existing playlists</a>.</p>
+			<p>Any comment is welcome: franceimage.com<i class="fa fa-at"></i>gmail.com.
+			</section>
+            </div>
+        </div>
+    </div>
+
+
+	<div id="mapCanvas"></div><div id="mapCenter"></div>
+	<svg id="mapGrid">
+	<path d="M50 0 L50 100 M0 50 L100 50" />
+	</svg>
 	
 	<!-- Load application -->
 	<script src="explore.js" type="text/javascript"></script>

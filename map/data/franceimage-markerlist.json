@@ -1,0 +1,2379 @@
+processJSON([
+  
+    {
+      "guid": "84e1d9c30858",
+      "title": "Tourtour",
+      "latlng": "43.588903, 6.304188",
+      "youtubeId": "S803Itq4n-0"
+    }
+    ,
+  
+    {
+      "guid": "ccc0b401d6c2",
+      "title": "Saint-Nectaire",
+      "latlng": "45.588217, 2.992436",
+      "youtubeId": "Yy18onG8C-Y"
+    }
+    ,
+  
+    {
+      "guid": "5e9b4080d107",
+      "title": "Saint-Ceneri-Le-Cerei",
+      "latlng": "48.379355, -0.052849",
+      "youtubeId": "WLFxZqIBkbU"
+    }
+    ,
+  
+    {
+      "guid": "7195c5c8cb2f",
+      "title": "Ploumanach",
+      "latlng": "48.836977, -3.483074",
+      "youtubeId": "HgfmpE90FmU"
+    }
+    ,
+  
+    {
+      "guid": "dc4738b4d1f2",
+      "title": "Lods",
+      "latlng": "47.045169, 6.246973",
+      "youtubeId": "XIBRqwlS7yU"
+    }
+    ,
+  
+    {
+      "guid": "390669f2c1ac",
+      "title": "Château de Bournazel",
+      "latlng": "44.459599, 2.298574",
+      "youtubeId": "b1vjTfzRqqQ"
+    }
+    ,
+  
+    {
+      "guid": "cd2bab61c92f",
+      "title": "Wissant",
+      "latlng": "50.885521, 1.661268",
+      "youtubeId": "m3D-nX7-BAc"
+    }
+    ,
+  
+    {
+      "guid": "c0d243743dc6",
+      "title": "Solutré-Pouilly",
+      "latlng": "46.298569, 4.718348",
+      "youtubeId": "NdLv2XO9v6M"
+    }
+    ,
+  
+    {
+      "guid": "af8ea123003a",
+      "title": "Fénétrange",
+      "latlng": "48.846314, 7.018320",
+      "youtubeId": "vy5ZOJb-gtA"
+    }
+    ,
+  
+    {
+      "guid": "dda68e040f72",
+      "title": "Centuri",
+      "latlng": "42.966020, 9.350120",
+      "youtubeId": "AO8vPrITfK4"
+    }
+    ,
+  
+    {
+      "guid": "97aaa8bb4264",
+      "title": "Barbizon",
+      "latlng": "48.446154, 2.602475",
+      "youtubeId": "lDHV0o923Mk"
+    }
+    ,
+  
+    {
+      "guid": "9c14739e3088",
+      "title": "Ault",
+      "latlng": "50.100420, 1.450432",
+      "youtubeId": "hDzMdK7hwMY"
+    }
+    ,
+  
+    {
+      "guid": "7b2b322eb3b9",
+      "title": "Arbois",
+      "latlng": "46.902410, 5.772087",
+      "youtubeId": "xnXMQCd-2-M"
+    }
+    ,
+  
+    {
+      "guid": "afdd15760dac",
+      "title": "Château de Serrant",
+      "latlng": "47.415074, -0.743657",
+      "youtubeId": "smuToCZ-q_0"
+    }
+    ,
+  
+    {
+      "guid": "7681f755744a",
+      "title": "Château de Montcony",
+      "latlng": "46.701130, 5.292148",
+      "youtubeId": "gd-0dJpi0v0"
+    }
+    ,
+  
+    {
+      "guid": "aa3b798758b4",
+      "title": "Château de Meauce",
+      "latlng": "46.902845, 3.059111",
+      "youtubeId": "1NSQPOuPz_A"
+    }
+    ,
+  
+    {
+      "guid": "1eb462e1c9ef",
+      "title": "Château de Goulaine",
+      "latlng": "47.204282, -1.402587",
+      "youtubeId": "cHp3Qf9hwdo"
+    }
+    ,
+  
+    {
+      "guid": "c3ab470a1c18",
+      "title": "Château de Challain-la-Potherie",
+      "latlng": "47.634921, -1.044108",
+      "youtubeId": "y5hm3ERaeiM"
+    }
+    ,
+  
+    {
+      "guid": "df1de3cfa4ce",
+      "title": "Notre-Dame-du-Haut",
+      "latlng": "47.704475, 6.620677",
+      "youtubeId": "aH4Trbyw0uY"
+    }
+    ,
+  
+    {
+      "guid": "caa51ea77135",
+      "title": "Grotte de Chauvet",
+      "latlng": "44.407070, 4.428340",
+      "youtubeId": "zyWb7F9JigI"
+    }
+    ,
+  
+    {
+      "guid": "ef3061205abe",
+      "title": "Cité de la Mer",
+      "latlng": "49.646278, -1.617204",
+      "youtubeId": "pZVkDn6YTps"
+    }
+    ,
+  
+    {
+      "guid": "a30e35d011a3",
+      "title": "Citadelle de Calvi",
+      "latlng": "42.568206, 8.760556",
+      "youtubeId": "X_lzXyeRXe8"
+    }
+    ,
+  
+    {
+      "guid": "3b8f6b956aa1",
+      "title": "Château de Pompadour",
+      "latlng": "45.396923, 1.382299",
+      "youtubeId": "xP8cmzahRNs"
+    }
+    ,
+  
+    {
+      "guid": "0f9563f0c8e8",
+      "title": "Château de Boussac",
+      "latlng": "46.347996, 2.210982",
+      "youtubeId": "AOuIexJ5nBI"
+    }
+    ,
+  
+    {
+      "guid": "ac914c380f2a",
+      "title": "Varengeville-sur-Mer",
+      "latlng": "49.904760, 0.992657",
+      "youtubeId": "vPtR4cDetW0"
+    }
+    ,
+  
+    {
+      "guid": "1766169dd992",
+      "title": "Sare",
+      "latlng": "43.312725, -1.580376",
+      "youtubeId": "nperJhvNKiQ"
+    }
+    ,
+  
+    {
+      "guid": "3866ce5aed43",
+      "title": "Plombières-les-Bains",
+      "latlng": "47.962874, 6.455529",
+      "youtubeId": "JM3zO--I1Dg"
+    }
+    ,
+  
+    {
+      "guid": "edffb41d26c2",
+      "title": "Montreuil-sur-Mer",
+      "latlng": "50.465945, 1.760140",
+      "youtubeId": "bFsuE7Pik2Y"
+    }
+    ,
+  
+    {
+      "guid": "cd60ce8ce08f",
+      "title": "Courances",
+      "latlng": "48.440497, 2.474411",
+      "youtubeId": "DhU_waeG0zQ"
+    }
+    ,
+  
+    {
+      "guid": "5a454b6ba3eb",
+      "title": "Château de Courances",
+      "latlng": "48.441620, 2.469936",
+      "youtubeId": "w_butuq5a68"
+    }
+    ,
+  
+    {
+      "guid": "436c3163a966",
+      "title": "Béhuard",
+      "latlng": "47.379163, -0.644233",
+      "youtubeId": "yzcPQXxBEzM"
+    }
+    ,
+  
+    {
+      "guid": "fb9b29074b82",
+      "title": "Château de Carrouges",
+      "latlng": "48.560129, -0.154366",
+      "youtubeId": "cnIZMSzu0OQ"
+    }
+    ,
+  
+    {
+      "guid": "e80c59d4abd7",
+      "title": "Saint-Pierre de Poitiers",
+      "latlng": "46.580437, 0.349049",
+      "youtubeId": "pxahg-t6GMQ"
+    }
+    ,
+  
+    {
+      "guid": "764e822ff448",
+      "title": "Saint-Julien du Mans",
+      "latlng": "48.009253, 0.198816",
+      "youtubeId": "3Z9rkIp3CnM"
+    }
+    ,
+  
+    {
+      "guid": "ca7b7702de8d",
+      "title": "Notre-Dame de Strasbourg",
+      "latlng": "48.581880, 7.751035",
+      "youtubeId": "8RsPoOaTauI"
+    }
+    ,
+  
+    {
+      "guid": "2e561d50166e",
+      "title": "Notre-Dame de Reims",
+      "latlng": "49.253866, 4.034053",
+      "youtubeId": "wHG5uPweFCo"
+    }
+    ,
+  
+    {
+      "guid": "d53026307638",
+      "title": "Abbaye de la Chaise-Dieu",
+      "latlng": "45.321178, 3.696126",
+      "youtubeId": "6-jQgjHPR_4"
+    }
+    ,
+  
+    {
+      "guid": "defa810410da",
+      "title": "Talmont-sur-Gironde",
+      "latlng": "45.534802, -0.907886",
+      "youtubeId": "BcopfXLkhu8"
+    }
+    ,
+  
+    {
+      "guid": "f9f61ff1da43",
+      "title": "Sauzon",
+      "latlng": "47.371192, -3.221439",
+      "youtubeId": "gBgkvbqYqK0"
+    }
+    ,
+  
+    {
+      "guid": "8a61e9a47a51",
+      "title": "Saint-Quirin",
+      "latlng": "48.609996, 7.065300",
+      "youtubeId": "h7AS275zp0c"
+    }
+    ,
+  
+    {
+      "guid": "082946289d11",
+      "title": "Locronan",
+      "latlng": "48.098711, -4.207264",
+      "youtubeId": "d8OlGeBbukI"
+    }
+    ,
+  
+    {
+      "guid": "37653264aa2e",
+      "title": "Labastide d'Armagnac",
+      "latlng": "43.969671, -0.185742",
+      "youtubeId": "MGNrkUvHnDU"
+    }
+    ,
+  
+    {
+      "guid": "bd8d952fffc0",
+      "title": "Corbara",
+      "latlng": "42.613912, 8.905325",
+      "youtubeId": "9T9Ur8bmqF0"
+    }
+    ,
+  
+    {
+      "guid": "87d30270ceae",
+      "title": "Place Ducale",
+      "latlng": "49.773541, 4.720792",
+      "youtubeId": "58XKYgM0CCM"
+    }
+    ,
+  
+    {
+      "guid": "f11e87ac2bb5",
+      "title": "Palais Bénédictine",
+      "latlng": "49.758859, 0.367972",
+      "youtubeId": "mrpbAFzmz_E"
+    }
+    ,
+  
+    {
+      "guid": "f0e0dd664d39",
+      "title": "Mémorial de Caen",
+      "latlng": "49.197336, -0.383990",
+      "youtubeId": "4WMx1Axi0-Q"
+    }
+    ,
+  
+    {
+      "guid": "e650429be219",
+      "title": "Château de Beaumesnil",
+      "latlng": "49.013984, 0.711376",
+      "youtubeId": "GQYDieMBxgU"
+    }
+    ,
+  
+    {
+      "guid": "3f369d90ef96",
+      "title": "Notre-Dame de Rouen",
+      "latlng": "49.440195, 1.094987",
+      "youtubeId": "biRZYx0U7RY"
+    }
+    ,
+  
+    {
+      "guid": "9e0933dcdd2c",
+      "title": "Abbaye de Jumièges",
+      "latlng": "49.431932, 0.819054",
+      "youtubeId": "o_TIcUqZlUk"
+    }
+    ,
+  
+    {
+      "guid": "2f3d3b41f4b9",
+      "title": "Vogüé",
+      "latlng": "44.550157, 4.415842",
+      "youtubeId": "PvRMwT_9Y-s"
+    }
+    ,
+  
+    {
+      "guid": "0bb48c996d76",
+      "title": "Nonza",
+      "latlng": "42.785099, 9.343739",
+      "youtubeId": "HIrp7JSBvfs"
+    }
+    ,
+  
+    {
+      "guid": "25dac233d570",
+      "title": "Gordes",
+      "latlng": "43.911031, 5.200096",
+      "youtubeId": "aFPsymL6jbE"
+    }
+    ,
+  
+    {
+      "guid": "d143ef4b2ee0",
+      "title": "Caylus",
+      "latlng": "44.235847, 1.770788",
+      "youtubeId": "dakK5HvTvoo"
+    }
+    ,
+  
+    {
+      "guid": "328a3397cedd",
+      "title": "Cathédrale Saint-Etienne",
+      "latlng": "44.447316, 1.443045",
+      "youtubeId": "Ty-9NLrFxcw"
+    }
+    ,
+  
+    {
+      "guid": "6bafe17b9563",
+      "title": "Barfleur",
+      "latlng": "49.672638, -1.259491",
+      "youtubeId": "6SWzUmEHqh4"
+    }
+    ,
+  
+    {
+      "guid": "e2d163328329",
+      "title": "Ville close de Concarneau",
+      "latlng": "47.872570, -3.913476",
+      "youtubeId": "1TQxOmajyFA"
+    }
+    ,
+  
+    {
+      "guid": "afa23c2a6273",
+      "title": "Pointe du Raz",
+      "latlng": "48.038830, -4.731769",
+      "youtubeId": "7z1a8un5u8I"
+    }
+    ,
+  
+    {
+      "guid": "d918f3b9deb8",
+      "title": "L'Aber Wrac'h",
+      "latlng": "48.599807, -4.551780",
+      "youtubeId": "4NbkzhvS_sk"
+    }
+    ,
+  
+    {
+      "guid": "bb519408bd84",
+      "title": "Ile d'Ouessant",
+      "latlng": "48.457668, -5.096057",
+      "youtubeId": "NV0mZ9btEd0"
+    }
+    ,
+  
+    {
+      "guid": "30f13edc8832",
+      "title": "Citadelle de Brest",
+      "latlng": "48.381545, -4.493685",
+      "youtubeId": "mieomUI-zrY"
+    }
+    ,
+  
+    {
+      "guid": "a746ebf6c729",
+      "title": "Château de Troussay",
+      "latlng": "47.491217, 1.424693",
+      "youtubeId": "M0z3Od9K4Qo"
+    }
+    ,
+  
+    {
+      "guid": "4dfdd6331638",
+      "title": "Puycelsi",
+      "latlng": "43.993306, 1.710177",
+      "youtubeId": "KYgk04engIQ"
+    }
+    ,
+  
+    {
+      "guid": "ee88d100d128",
+      "title": "Château de la Motte-Chandeniers",
+      "latlng": "47.092361, 0.032685",
+      "youtubeId": "SUsjsqAjer4"
+    }
+    ,
+  
+    {
+      "guid": "e1f732e7615a",
+      "title": "Château de l'Islette",
+      "latlng": "47.267566, 0.434231",
+      "youtubeId": "SoAI6aaXFQI"
+    }
+    ,
+  
+    {
+      "guid": "4d3d434f369c",
+      "title": "Château de Brezé",
+      "latlng": "47.174693, -0.057233",
+      "youtubeId": "nuPM7D1lxlQ"
+    }
+    ,
+  
+    {
+      "guid": "682914058752",
+      "title": "Castelnau de Montmirail",
+      "latlng": "43.965620, 1.820128",
+      "youtubeId": "ZK0ZBirjOw8"
+    }
+    ,
+  
+    {
+      "guid": "b9925c824d59",
+      "title": "Palais de l'Elysée",
+      "latlng": "48.870437, 2.316743",
+      "youtubeId": "7tF8fmcXaw4"
+    }
+    ,
+  
+    {
+      "guid": "59ba94b559a1",
+      "title": "Château de Menars",
+      "latlng": "47.638740, 1.410555",
+      "youtubeId": "2fSSyKyz23s"
+    }
+    ,
+  
+    {
+      "guid": "4b34dfd2d0ad",
+      "title": "Château de la Motte-Tilly",
+      "latlng": "48.467193, 3.431489",
+      "youtubeId": "dUZmxcY-Jp4"
+    }
+    ,
+  
+    {
+      "guid": "88f74ebe4e17",
+      "title": "Abbaye de Cluny",
+      "latlng": "46.434157, 4.659242",
+      "youtubeId": "uea2AUXe1ts"
+    }
+    ,
+  
+    {
+      "guid": "0a4bd7e4217c",
+      "title": "Phare d'Eckmühl",
+      "latlng": "47.798251, -4.372767",
+      "youtubeId": "9HNzzEHGsA0"
+    }
+    ,
+  
+    {
+      "guid": "6d73c9da120f",
+      "title": "Château de Sceaux",
+      "latlng": "48.774436, 2.300042",
+      "youtubeId": "PVOToLsgQYM"
+    }
+    ,
+  
+    {
+      "guid": "d9dcc25899df",
+      "title": "Château de Maisons-Laffitte",
+      "latlng": "48.947166, 2.153847",
+      "youtubeId": "vxXP4HjI2GQ"
+    }
+    ,
+  
+    {
+      "guid": "aea8d16b679e",
+      "title": "Château de Lucinière",
+      "latlng": "47.483133, -1.465864",
+      "youtubeId": "ilF_Gaozwas"
+    }
+    ,
+  
+    {
+      "guid": "e4633f90d7da",
+      "title": "Château de la Groulais",
+      "latlng": "47.466976, -1.764411",
+      "youtubeId": "tbgCmabzSv0"
+    }
+    ,
+  
+    {
+      "guid": "1a9ea9042273",
+      "title": "Château de la Bretesche",
+      "latlng": "47.482867, -2.171671",
+      "youtubeId": "Wfxc4rjbatg"
+    }
+    ,
+  
+    {
+      "guid": "8f63cdf15f6c",
+      "title": "Château de Chausseneige",
+      "latlng": "45.033939, 1.530251",
+      "youtubeId": "Cs-H6MVdI4E"
+    }
+    ,
+  
+    {
+      "guid": "ee442c30d36f",
+      "title": "Château de Chaumont",
+      "latlng": "47.479092, 1.181905",
+      "youtubeId": "iA0JUtGkXrc"
+    }
+    ,
+  
+    {
+      "guid": "a3312f0b3f25",
+      "title": "Château de Champs-sur-Marne",
+      "latlng": "48.853706, 2.604050",
+      "youtubeId": "F22nNN6UEtg"
+    }
+    ,
+  
+    {
+      "guid": "4c2b40848b99",
+      "title": "Château d'Essalois",
+      "latlng": "45.462185, 4.245803",
+      "youtubeId": "zFLyTjSfNmI"
+    }
+    ,
+  
+    {
+      "guid": "d66e4b39f359",
+      "title": "Prieuré de Saint-Roman-le-Puy",
+      "latlng": "45.557461, 4.125992",
+      "youtubeId": "098BjMTLn_I"
+    }
+    ,
+  
+    {
+      "guid": "635104b71a11",
+      "title": "Château du Plessis-Bourré",
+      "latlng": "47.600895, -0.544321",
+      "youtubeId": "fvUVDeS23mw"
+    }
+    ,
+  
+    {
+      "guid": "02f37da27714",
+      "title": "Château de Tressé",
+      "latlng": "47.733216, -1.160050",
+      "youtubeId": "WV4qxZ-750U"
+    }
+    ,
+  
+    {
+      "guid": "831a6ada2c63",
+      "title": "Château de Pouancé",
+      "latlng": "47.741905, -1.178366",
+      "youtubeId": "d3Y3CMY4Q3M"
+    }
+    ,
+  
+    {
+      "guid": "b10163c3df7a",
+      "title": "Château de Montrond-les-Bains",
+      "latlng": "45.641457, 4.230569",
+      "youtubeId": "mBbqLsqrNKQ"
+    }
+    ,
+  
+    {
+      "guid": "84f0abce7d61",
+      "title": "Château de Montpoupon",
+      "latlng": "47.252873, 1.141382",
+      "youtubeId": "_ol4lAK4N3A"
+    }
+    ,
+  
+    {
+      "guid": "17101e0d66c4",
+      "title": "Château de Commequiers",
+      "latlng": "46.766331, -1.831439",
+      "youtubeId": "CcWd70-LrLc"
+    }
+    ,
+  
+    {
+      "guid": "d3c7c092acc5",
+      "title": "Château de Bidache",
+      "latlng": "43.487493, -1.138246",
+      "youtubeId": "Jc5iGEf2bE0"
+    }
+    ,
+  
+    {
+      "guid": "18d204148a37",
+      "title": "Cathédrale Sainte-Cécile - Albi",
+      "latlng": "43.928519, 2.142933",
+      "youtubeId": "9wrh_dlPP5s"
+    }
+    ,
+  
+    {
+      "guid": "e1b6a09a89c5",
+      "title": "Basilique Saint-Donatien",
+      "latlng": "47.229282, -1.542311",
+      "youtubeId": "jFeV0Z3rKAA"
+    }
+    ,
+  
+    {
+      "guid": "0cec2e66e921",
+      "title": "Abbaye de Solesmes",
+      "latlng": "47.852239, -0.303298",
+      "youtubeId": "q2TQLDA_ngw"
+    }
+    ,
+  
+    {
+      "guid": "b88bb159e98f",
+      "title": "Villefranche-de-Rouergue",
+      "latlng": "44.352356, 2.037810",
+      "youtubeId": "uEK-uOO_M-8"
+    }
+    ,
+  
+    {
+      "guid": "7839dc38a8f7",
+      "title": "Abbaye de Sénanque",
+      "latlng": "43.928314, 5.186883",
+      "youtubeId": "ZuyYDacly0Q"
+    }
+    ,
+  
+    {
+      "guid": "ea59c497cb8a",
+      "title": "Abbaye de Saint-Papoul",
+      "latlng": "43.330654, 2.033600",
+      "youtubeId": "gT6ii-317UA"
+    }
+    ,
+  
+    {
+      "guid": "54724c858e43",
+      "title": "Abbaye de Saint-Hilaire",
+      "latlng": "43.093023, 2.308364",
+      "youtubeId": "yk0GkCL1jeo"
+    }
+    ,
+  
+    {
+      "guid": "2ed2216916a5",
+      "title": "Abbaye de Caunes-Minervois",
+      "latlng": "43.325906, 2.526986",
+      "youtubeId": "vNUQPDMiX2k"
+    }
+    ,
+  
+    {
+      "guid": "e183e2273fb2",
+      "title": "Villeneuve d'Aveyron",
+      "latlng": "44.437293, 2.029949",
+      "youtubeId": "hL_GausX2r8"
+    }
+    ,
+  
+    {
+      "guid": "a47a437e279a",
+      "title": "Roussillon- Village",
+      "latlng": "43.902618, 5.292627",
+      "youtubeId": "mEj5ZOwsocs"
+    }
+    ,
+  
+    {
+      "guid": "a12e8eb4c94e",
+      "title": "Roussillon- Les Ocres",
+      "latlng": "43.900260, 5.296886",
+      "youtubeId": "kZXMbsRVDCM"
+    }
+    ,
+  
+    {
+      "guid": "3a5a98aa40d3",
+      "title": "Malaussène",
+      "latlng": "43.926952, 7.131008",
+      "youtubeId": "KsGiVWBtivI"
+    }
+    ,
+  
+    {
+      "guid": "b3604fa80e65",
+      "title": "Fontaine de Vaucluse",
+      "latlng": "43.921855, 5.127994",
+      "youtubeId": "nwuwTv4KlCY"
+    }
+    ,
+  
+    {
+      "guid": "e36d7f3bbe8f",
+      "title": "Figeac",
+      "latlng": "44.607968, 2.034981",
+      "youtubeId": "8D7Fjy8MV2g"
+    }
+    ,
+  
+    {
+      "guid": "c0f506bd062f",
+      "title": "Martrin - Commanderie Hospitalière",
+      "latlng": "43.938617, 2.619184",
+      "youtubeId": "04DXLEQqVuM"
+    }
+    ,
+  
+    {
+      "guid": "304965538395",
+      "title": "La Couvertoirade",
+      "latlng": "43.912436, 3.317084",
+      "youtubeId": "Usg9mguVCGA"
+    }
+    ,
+  
+    {
+      "guid": "d388a67c8010",
+      "title": "Dinan - Coeur Historique",
+      "latlng": "48.450377, -2.044666",
+      "youtubeId": "geMMoMCK8xg"
+    }
+    ,
+  
+    {
+      "guid": "d0a3ffdf713b",
+      "title": "Coupiac",
+      "latlng": "43.954039, 2.581199",
+      "youtubeId": "ZHMp4FQggdg"
+    }
+    ,
+  
+    {
+      "guid": "6dfd12c36a86",
+      "title": "Commanderie de Sainte-Eulalie",
+      "latlng": "43.982521, 3.135277",
+      "youtubeId": "VHqCdDI1osQ"
+    }
+    ,
+  
+    {
+      "guid": "5bd454bb4d09",
+      "title": "Brousse-le-Château",
+      "latlng": "43.996852, 2.624525",
+      "youtubeId": "XH6oZBs_sgA"
+    }
+    ,
+  
+    {
+      "guid": "ca7693e29430",
+      "title": "Villa Ephrussi de Rothschild",
+      "latlng": "43.696585, 7.328460",
+      "youtubeId": "iXpVX6nigo4"
+    }
+    ,
+  
+    {
+      "guid": "3e4dbbe36b04",
+      "title": "Port de Nice",
+      "latlng": "43.697006, 7.284797",
+      "youtubeId": "mutGti8dj0A"
+    }
+    ,
+  
+    {
+      "guid": "46eac33cc92b",
+      "title": "Phare du Cap Ferrat",
+      "latlng": "43.682484, 7.327263",
+      "youtubeId": "ORWiYAs7ZD0"
+    }
+    ,
+  
+    {
+      "guid": "89e0dfe86227",
+      "title": "Fort du Mont Alban",
+      "latlng": "43.701338, 7.300166",
+      "youtubeId": "cuDAfZiWwQc"
+    }
+    ,
+  
+    {
+      "guid": "01c15f16974e",
+      "title": "Le Mans - Coeur Historique",
+      "latlng": "48.009236, 0.198840",
+      "youtubeId": "dGmLVIgXQpE"
+    }
+    ,
+  
+    {
+      "guid": "c0308464b8b3",
+      "title": "Abbaye de Loc-Dieu",
+      "latlng": "44.339538, 1.930930",
+      "youtubeId": "TzhIgSBcC20"
+    }
+    ,
+  
+    {
+      "guid": "b2dfb88af19e",
+      "title": "Abbaye de Bonnecombe",
+      "latlng": "44.243336, 2.554542",
+      "youtubeId": "DuO4ffWLeX8"
+    }
+    ,
+  
+    {
+      "guid": "3ac89fa9b1a6",
+      "title": "Château de Penne",
+      "latlng": "44.078452, 1.727250",
+      "youtubeId": "YGfPe3rO5b0"
+    }
+    ,
+  
+    {
+      "guid": "d711a0769688",
+      "title": "Château de Najac",
+      "latlng": "44.218624, 1.973212",
+      "youtubeId": "bnoHR3HhBoU"
+    }
+    ,
+  
+    {
+      "guid": "7236a00c31d2",
+      "title": "Château de Cruilly",
+      "latlng": "49.286406, -0.539687",
+      "youtubeId": "b7vxJZBdpiw"
+    }
+    ,
+  
+    {
+      "guid": "3bdbe7741683",
+      "title": "Château de Bannes",
+      "latlng": "44.794774, 0.749224",
+      "youtubeId": "7TeGD5qgshk"
+    }
+    ,
+  
+    {
+      "guid": "3bebd94e827d",
+      "title": "Castelnau-de-Montmirail",
+      "latlng": "43.965753, 1.819855",
+      "youtubeId": "hPnGTaN0sTI"
+    }
+    ,
+  
+    {
+      "guid": "f713bb249e5c",
+      "title": "Sarlat-la-Canéda",
+      "latlng": "44.888508, 1.216690",
+      "youtubeId": "1fioKm0RVgY"
+    }
+    ,
+  
+    {
+      "guid": "c9db8b51c797",
+      "title": "Pont Valentré",
+      "latlng": "44.445060, 1.431718",
+      "youtubeId": "ZhchYt11JGI"
+    }
+    ,
+  
+    {
+      "guid": "ad94f347d092",
+      "title": "Collonges-la-Rouge",
+      "latlng": "45.060312, 1.654604",
+      "youtubeId": "0IaUkVzh9Ck"
+    }
+    ,
+  
+    {
+      "guid": "c3b908bfec30",
+      "title": "Château du Lude",
+      "latlng": "47.647498, 0.159020",
+      "youtubeId": "vkuw0PfBqU0"
+    }
+    ,
+  
+    {
+      "guid": "0b35161be2a8",
+      "title": "Château de Bruniquel",
+      "latlng": "44.056137, 1.666210",
+      "youtubeId": "ESmiyMZAL7w"
+    }
+    ,
+  
+    {
+      "guid": "bffc809aa486",
+      "title": "La Roque-Gageac",
+      "latlng": "44.826249, 1.181102",
+      "youtubeId": "-28c8px63hE"
+    }
+    ,
+  
+    {
+      "guid": "7836ffc1bca0",
+      "title": "Domme",
+      "latlng": "44.801708, 1.216495",
+      "youtubeId": "emBc1Am4pzM"
+    }
+    ,
+  
+    {
+      "guid": "3bacf7d75b54",
+      "title": "Château de Mauriac",
+      "latlng": "43.956941, 1.931389",
+      "youtubeId": "824bhVY_P5E"
+    }
+    ,
+  
+    {
+      "guid": "ddaa7ece7b3c",
+      "title": "Château de Luynes",
+      "latlng": "47.386327, 0.553162",
+      "youtubeId": "fSbbo_CyMgU"
+    }
+    ,
+  
+    {
+      "guid": "0f8873497b4f",
+      "title": "Château d'Abbadia",
+      "latlng": "43.377420, -1.749346",
+      "youtubeId": "n7u9LvPnrRQ"
+    }
+    ,
+  
+    {
+      "guid": "8251f25f3243",
+      "title": "Remparts d'Aigues-Mortes",
+      "latlng": "43.565281, 4.189471",
+      "youtubeId": "DQQtEJS9nvY"
+    }
+    ,
+  
+    {
+      "guid": "bb37b187bc18",
+      "title": "Palais des Papes",
+      "latlng": "43.950931, 4.807426",
+      "youtubeId": "NKTjAqPPb_U"
+    }
+    ,
+  
+    {
+      "guid": "a1a6d680d85d",
+      "title": "Château de la Roche-Guyon",
+      "latlng": "49.081268, 1.627872",
+      "youtubeId": "sHyS4Kn0RGk"
+    }
+    ,
+  
+    {
+      "guid": "7f9467c7fe29",
+      "title": "Château de Hautefort",
+      "latlng": "45.259723, 1.144886",
+      "youtubeId": "c7pwaAKqzyI"
+    }
+    ,
+  
+    {
+      "guid": "57c3799d1247",
+      "title": "Château de Castelnaud",
+      "latlng": "44.815951, 1.148477",
+      "youtubeId": "c7P9D21Mj_k"
+    }
+    ,
+  
+    {
+      "guid": "01d399ae4691",
+      "title": "Remparts de Langres",
+      "latlng": "47.860129, 5.335340",
+      "youtubeId": "dAXaxF7bHYc"
+    }
+    ,
+  
+    {
+      "guid": "81e35d190df9",
+      "title": "Château de Peyrelade",
+      "latlng": "44.195043, 3.148527",
+      "youtubeId": "8fu4rJXyaQc"
+    }
+    ,
+  
+    {
+      "guid": "2287a26473f3",
+      "title": "Château de Fénelon",
+      "latlng": "44.842361, 1.350355",
+      "youtubeId": "c02d1JPx01E"
+    }
+    ,
+  
+    {
+      "guid": "c81e16ca8f5c",
+      "title": "Château de Commarque",
+      "latlng": "44.942103, 1.101279",
+      "youtubeId": "RG9-Jvi2iqQ"
+    }
+    ,
+  
+    {
+      "guid": "b60b82304cb5",
+      "title": "Château de Castelnau-Brétenoux",
+      "latlng": "44.899340, 1.825495",
+      "youtubeId": "p_qOP5mapyw"
+    }
+    ,
+  
+    {
+      "guid": "db6f841bb01f",
+      "title": "Château de Beynac",
+      "latlng": "44.840301, 1.145337",
+      "youtubeId": "ltg36J6nNtI"
+    }
+    ,
+  
+    {
+      "guid": "62428f4abae0",
+      "title": "Belcastel",
+      "latlng": "44.389005, 2.335850",
+      "youtubeId": "S2Bw_YiB2q0"
+    }
+    ,
+  
+    {
+      "guid": "22951223ce02",
+      "title": "Abbaye de la Sauve-Majeure",
+      "latlng": "44.767774, -0.312183",
+      "youtubeId": "tk9aeLTPBb4"
+    }
+    ,
+  
+    {
+      "guid": "dc5c796de332",
+      "title": "Château des Adhémar",
+      "latlng": "44.559935, 4.754815",
+      "youtubeId": "iMc2zHYYdXQ"
+    }
+    ,
+  
+    {
+      "guid": "a7e470d681d6",
+      "title": "Château de Suze-la-Rousse",
+      "latlng": "44.290091, 4.838346",
+      "youtubeId": "B6mW1-F_cgc"
+    }
+    ,
+  
+    {
+      "guid": "3869bbc81618",
+      "title": "Château d'Ussé",
+      "latlng": "47.250002, 0.291303",
+      "youtubeId": "gyRcReOkrzU"
+    }
+    ,
+  
+    {
+      "guid": "addf8191d6a5",
+      "title": "Château de Grignan",
+      "latlng": "44.418790, 4.909059",
+      "youtubeId": "2_yAyc6f8Yk"
+    }
+    ,
+  
+    {
+      "guid": "9983240c526a",
+      "title": "Château de Bussy-Rabutin",
+      "latlng": "47.561601, 4.523463",
+      "youtubeId": "xYIGsl2SIhw"
+    }
+    ,
+  
+    {
+      "guid": "d40f173e8ff6",
+      "title": "Abbaye de Clairvaux",
+      "latlng": "48.147401, 4.788730",
+      "youtubeId": "TJyRSpReqS0"
+    }
+    ,
+  
+    {
+      "guid": "1c4938116c1f",
+      "title": "Abbaye de Fontfroide",
+      "latlng": "43.127395, 2.898422",
+      "youtubeId": "v__lw6dFtEU"
+    }
+    ,
+  
+    {
+      "guid": "540615dda709",
+      "title": "Abbaye d'Aubazine",
+      "latlng": "45.174725, 1.670075",
+      "youtubeId": "aiEy6WINix4"
+    }
+    ,
+  
+    {
+      "guid": "c5a4edc50ca1",
+      "title": "Château Gaillard",
+      "latlng": "49.238021, 1.403415",
+      "youtubeId": "lb-nsnbUBQ4"
+    }
+    ,
+  
+    {
+      "guid": "3182775b166c",
+      "title": "Château de Tonquédec",
+      "latlng": "48.676666, -3.411898",
+      "youtubeId": "x5hfnZTr6yw"
+    }
+    ,
+  
+    {
+      "guid": "c07ca445833b",
+      "title": "Château de Roquefixade",
+      "latlng": "42.938783, 1.753293",
+      "youtubeId": "99ZsTm6JSBU"
+    }
+    ,
+  
+    {
+      "guid": "07a791856d22",
+      "title": "Château de Puivert",
+      "latlng": "42.921109, 2.055281",
+      "youtubeId": "zrj7awD-iFA"
+    }
+    ,
+  
+    {
+      "guid": "fcd2e9d81cbd",
+      "title": "Château de Murol",
+      "latlng": "45.578308, 2.945622",
+      "youtubeId": "tY89AZLnvZc"
+    }
+    ,
+  
+    {
+      "guid": "adc42c891108",
+      "title": "Lavaur",
+      "latlng": "43.699234, 1.821891",
+      "youtubeId": "h6aBez63q90"
+    }
+    ,
+  
+    {
+      "guid": "73f3e2a6ab6f",
+      "title": "Château de la Hunaudaye",
+      "latlng": "48.472807, -2.339058",
+      "youtubeId": "bfJKd2w3was"
+    }
+    ,
+  
+    {
+      "guid": "6e147e559b44",
+      "title": "Château de Josselin",
+      "latlng": "47.952214, -2.547414",
+      "youtubeId": "Tm5v3lBAL90"
+    }
+    ,
+  
+    {
+      "guid": "bcb17c8342b3",
+      "title": "Château d'Aguilar",
+      "latlng": "42.890689, 2.747349",
+      "youtubeId": "kwhz8V82aFo"
+    }
+    ,
+  
+    {
+      "guid": "fb2cb5e87fca",
+      "title": "Château de Villerouge-Termenès",
+      "latlng": "43.006764, 2.626792",
+      "youtubeId": "xrOuLQ6RxHQ"
+    }
+    ,
+  
+    {
+      "guid": "a7c4bd14c00c",
+      "title": "Château de Termes",
+      "latlng": "43.002427, 2.556639",
+      "youtubeId": "1Bv0e61QbNk"
+    }
+    ,
+  
+    {
+      "guid": "26fc4f346644",
+      "title": "Château de Saissac",
+      "latlng": "43.357000, 2.167820",
+      "youtubeId": "0vP-TIk29is"
+    }
+    ,
+  
+    {
+      "guid": "613cc5f1c083",
+      "title": "Château de Puilaurens",
+      "latlng": "42.803848, 2.299565",
+      "youtubeId": "H7sYe3iaMXY"
+    }
+    ,
+  
+    {
+      "guid": "942d485c02a1",
+      "title": "Château de Durfort",
+      "latlng": "43.017634, 2.548490",
+      "youtubeId": "myNPo1MkRog"
+    }
+    ,
+  
+    {
+      "guid": "966ed632a8be",
+      "title": "Les 4 Châteaux de Lastours",
+      "latlng": "43.336430, 2.378633",
+      "youtubeId": "UsHWjoeRCj8"
+    }
+    ,
+  
+    {
+      "guid": "6f1a9c5cfe9c",
+      "title": "Collioure",
+      "latlng": "42.525672, 3.084960",
+      "youtubeId": "cN_pP7SR-kg"
+    }
+    ,
+  
+    {
+      "guid": "f30e9e15a822",
+      "title": "Château de Vitré",
+      "latlng": "48.124466, -1.215180",
+      "youtubeId": "Yr6crIJJ_Ls"
+    }
+    ,
+  
+    {
+      "guid": "3f8bf46a9c21",
+      "title": "Mont Lozère",
+      "latlng": "44.425962, 3.739340",
+      "youtubeId": "0OHCYmOMZmg"
+    }
+    ,
+  
+    {
+      "guid": "d20dcadacce7",
+      "title": "Gorges de la Jonte",
+      "latlng": "44.200528, 3.317217",
+      "youtubeId": "OMPAgY8WBFU"
+    }
+    ,
+  
+    {
+      "guid": "b9361aec13b1",
+      "title": "Notre-Dame de Paris",
+      "latlng": "48.852961, 2.349891",
+      "youtubeId": "mLozB249gHk"
+    }
+    ,
+  
+    {
+      "guid": "322c5c682c21",
+      "title": "Notre-Dame de Nice",
+      "latlng": "43.703239, 7.265749",
+      "youtubeId": "jMvPaLinQAc"
+    }
+    ,
+  
+    {
+      "guid": "d312b21ff9ce",
+      "title": "Notre-Dame de Chartres",
+      "latlng": "48.447803, 1.487826",
+      "youtubeId": "aiiKVSnQSFI"
+    }
+    ,
+  
+    {
+      "guid": "66ed2733671a",
+      "title": "Houlgate",
+      "latlng": "49.301041, -0.075393",
+      "youtubeId": "RaBEEXdB6BI"
+    }
+    ,
+  
+    {
+      "guid": "1524b0588efb",
+      "title": "Cirque du Fer-à-Cheval",
+      "latlng": "46.074751, 6.858511",
+      "youtubeId": "HfoKXeWWowU"
+    }
+    ,
+  
+    {
+      "guid": "55bcd0403c4a",
+      "title": "Abbaye de Moissac",
+      "latlng": "44.105355, 1.084506",
+      "youtubeId": "Z6wqI90wHt8"
+    }
+    ,
+  
+    {
+      "guid": "7f2e6f1259bb",
+      "title": "Pont-Canal du Cacor",
+      "latlng": "44.091158, 1.102409",
+      "youtubeId": "YPpSf8ZxMf8"
+    }
+    ,
+  
+    {
+      "guid": "423f78178e1c",
+      "title": "Le Miroir d'eau",
+      "latlng": "44.841744, -0.569143",
+      "youtubeId": "0s8RIkpMf8Q"
+    }
+    ,
+  
+    {
+      "guid": "4b72a9d1e461",
+      "title": "Chartreuse du Reposoir",
+      "latlng": "46.005299, 6.537393",
+      "youtubeId": "_BOazM3i8gg"
+    }
+    ,
+  
+    {
+      "guid": "54019474e098",
+      "title": "Château de Valençay",
+      "latlng": "47.157431, 1.563026",
+      "youtubeId": "DzjDGo9QdNA"
+    }
+    ,
+  
+    {
+      "guid": "5e241d065676",
+      "title": "Château de Talcy",
+      "latlng": "47.769457, 1.444688",
+      "youtubeId": "p72kYFRlHiU"
+    }
+    ,
+  
+    {
+      "guid": "c09541c5b90e",
+      "title": "Château de Parentignat",
+      "latlng": "45.532768, 3.291376",
+      "youtubeId": "PG8fSGy6ugI"
+    }
+    ,
+  
+    {
+      "guid": "a03358660672",
+      "title": "Château de Pennautier",
+      "latlng": "43.243774, 2.317752",
+      "youtubeId": "iFyjC0zajqQ"
+    }
+    ,
+  
+    {
+      "guid": "1d28040e3855",
+      "title": "Château de Balleroy",
+      "latlng": "49.179980, -0.840584",
+      "youtubeId": "XQIaseRcbp8"
+    }
+    ,
+  
+    {
+      "guid": "1644458ab4a8",
+      "title": "Château d'Anjony",
+      "latlng": "45.054216, 2.478023",
+      "youtubeId": "ahFFpI8NLDA"
+    }
+    ,
+  
+    {
+      "guid": "b2d1dc3e7918",
+      "title": "Château de Pierre de Bresse",
+      "latlng": "46.881810, 5.265008",
+      "youtubeId": "h_skgGtndIU"
+    }
+    ,
+  
+    {
+      "guid": "56544e29503f",
+      "title": "Château de Couches",
+      "latlng": "46.862491, 4.586041",
+      "youtubeId": "1R7gO1_15Jw"
+    }
+    ,
+  
+    {
+      "guid": "5d5fe7468f41",
+      "title": "Berzé le Châtel",
+      "latlng": "46.385766, 4.688570",
+      "youtubeId": "69eNDWhcZ8c"
+    }
+    ,
+  
+    {
+      "guid": "23c73e6d9e93",
+      "title": "Maison Forte de Reignac",
+      "latlng": "44.979601, 1.054739",
+      "youtubeId": "KkVrkiaxhHQ"
+    }
+    ,
+  
+    {
+      "guid": "bc7794ef4910",
+      "title": "Château de Puymartin",
+      "latlng": "44.910542, 1.142370",
+      "youtubeId": "st3ammtyHik"
+    }
+    ,
+  
+    {
+      "guid": "1dfffdce9428",
+      "title": "Château de Gavaudun",
+      "latlng": "44.560483, 0.888293",
+      "youtubeId": "4IFtXWAydD4"
+    }
+    ,
+  
+    {
+      "guid": "3b46b5da314e",
+      "title": "Château de Biron",
+      "latlng": "44.632123, 0.872295",
+      "youtubeId": "6UVBcrmsDKg"
+    }
+    ,
+  
+    {
+      "guid": "a7e673969b35",
+      "title": "Château de Pierreclos",
+      "latlng": "46.330062, 4.686415",
+      "youtubeId": "Bc7bJ4_21O0"
+    }
+    ,
+  
+    {
+      "guid": "9d4466749d62",
+      "title": "Château de la Roche",
+      "latlng": "45.896018, 4.101787",
+      "youtubeId": "o3IUkh17tQI"
+    }
+    ,
+  
+    {
+      "guid": "56b01697deac",
+      "title": "Château de la Mothe-Chandeniers",
+      "latlng": "47.092390, 0.032461",
+      "youtubeId": "SUsjsqAjer4"
+    }
+    ,
+  
+    {
+      "guid": "a293463ea8fd",
+      "title": "Château de Montrottier",
+      "latlng": "45.898800, 6.038975",
+      "youtubeId": "rtIFbTJKQmU"
+    }
+    ,
+  
+    {
+      "guid": "3280df3a9dc0",
+      "title": "Château de Menton Saint-Bernard",
+      "latlng": "45.864158, 6.203642",
+      "youtubeId": "lISMMzahK-s"
+    }
+    ,
+  
+    {
+      "guid": "d7e02dff9b8d",
+      "title": "Château de Langeais",
+      "latlng": "47.324719, 0.406174",
+      "youtubeId": "yM--wBK9Iuw"
+    }
+    ,
+  
+    {
+      "guid": "7851281e8f84",
+      "title": "Château de Beauregard",
+      "latlng": "47.536944, 1.384160",
+      "youtubeId": "QqlgFjbggi4"
+    }
+    ,
+  
+    {
+      "guid": "b7f910d3e7c5",
+      "title": "Château de Morimont",
+      "latlng": "47.493554, 7.318062",
+      "youtubeId": "EAfwdnqBRRA"
+    }
+    ,
+  
+    {
+      "guid": "2c03348ce838",
+      "title": "Château de Clermont-Savès",
+      "latlng": "43.619914, 1.027209",
+      "youtubeId": "9cn1cVWZVHM"
+    }
+    ,
+  
+    {
+      "guid": "97328f4b8caa",
+      "title": "Château de Chevreaux",
+      "latlng": "46.510289, 5.403164",
+      "youtubeId": "wQ4af-fgiYM"
+    }
+    ,
+  
+    {
+      "guid": "5be3bd851c83",
+      "title": "Château de Caen",
+      "latlng": "49.186490, -0.362672",
+      "youtubeId": "5Bnjn133Pr4"
+    }
+    ,
+  
+    {
+      "guid": "10a5cb56a869",
+      "title": "Château de Spesbourg",
+      "latlng": "48.401895, 7.397235",
+      "youtubeId": "llDHYj1mTaM"
+    }
+    ,
+  
+    {
+      "guid": "6b1761d10031",
+      "title": "Château de Landsberg",
+      "latlng": "48.4206, 7.422696",
+      "youtubeId": "O1BmpkVAV68"
+    }
+    ,
+  
+    {
+      "guid": "be20366fccc0",
+      "title": "Château d'Andlau",
+      "latlng": "48.401395, 7.412472",
+      "youtubeId": "zwde2D-Lg8I"
+    }
+    ,
+  
+    {
+      "guid": "5a64b4851f3e",
+      "title": "Moulin Dautin",
+      "latlng": "47.676456, 3.522736",
+      "youtubeId": "6MpKx5vEDnA"
+    }
+    ,
+  
+    {
+      "guid": "807ecce2b794",
+      "title": "Château de Thiard",
+      "latlng": "46.663286, 4.622098",
+      "youtubeId": "BnnYWPJkosc"
+    }
+    ,
+  
+    {
+      "guid": "7280046853c5",
+      "title": "Château d'Urfé",
+      "latlng": "45.86515, 3.85616",
+      "youtubeId": "Zzwzto3XFZY"
+    }
+    ,
+  
+    {
+      "guid": "f23af292f6f0",
+      "title": "Château de Rochefort",
+      "latlng": "47.714991, 4.260459",
+      "youtubeId": "5qlhiW99yKA"
+    }
+    ,
+  
+    {
+      "guid": "7515f5e9416f",
+      "title": "Château de Boulogne",
+      "latlng": "44.689916, 4.439778",
+      "youtubeId": "ahW4yq_qoKc"
+    }
+    ,
+  
+    {
+      "guid": "5536f963659a",
+      "title": "Château de Bagnac",
+      "latlng": "46.152057, 0.969996",
+      "youtubeId": "pw2fN1u62x0"
+    }
+    ,
+  
+    {
+      "guid": "b5652dcb6c04",
+      "title": "Château Rocher",
+      "latlng": "46.089136, 2.927889",
+      "youtubeId": "Sqy3HFah7i8"
+    }
+    ,
+  
+    {
+      "guid": "84beaf90b430",
+      "title": "Château de Sarzay",
+      "latlng": "46.600276, 1.906395",
+      "youtubeId": "zOjtmq8nABU"
+    }
+    ,
+  
+    {
+      "guid": "537f7cb7cc6d",
+      "title": "Château de l'Herm",
+      "latlng": "45.078074, 0.959641",
+      "youtubeId": "GEz9IcuCwuU"
+    }
+    ,
+  
+    {
+      "guid": "36b7c648bcaa",
+      "title": "Château de Passy les Tours",
+      "latlng": "47.21492, 3.07516",
+      "youtubeId": "Cc3CyfJqNmE"
+    }
+    ,
+  
+    {
+      "guid": "b481bdd84c6f",
+      "title": "Château de Montfort",
+      "latlng": "47.591623, 4.325307",
+      "youtubeId": "8hufz5Npi48"
+    }
+    ,
+  
+    {
+      "guid": "d87117becb22",
+      "title": "Château de Chalucet",
+      "latlng": "45.73222, 1.3111",
+      "youtubeId": "ULe9YbeUG7o"
+    }
+    ,
+  
+    {
+      "guid": "f64d9d82f4cb",
+      "title": "Bassin d'Arcachon",
+      "latlng": "44.683079, -1.118368",
+      "youtubeId": "uojsEtXG9aM"
+    }
+    ,
+  
+    {
+      "guid": "061fcdef0e26",
+      "title": "Château de Vincennes",
+      "latlng": "48.842561, 2.435483",
+      "youtubeId": "qADdW7uHz2I"
+    }
+    ,
+  
+    {
+      "guid": "dab26d3a36b7",
+      "title": "Château de Falaise",
+      "latlng": "48.893756, -0.202143",
+      "youtubeId": "rUlaGL_29Hg"
+    }
+    ,
+  
+    {
+      "guid": "e819b539f9f9",
+      "title": "Château d'Azay le Rideau",
+      "latlng": "47.259023, 0.465725",
+      "youtubeId": "bm8vowIwFbY"
+    }
+    ,
+  
+    {
+      "guid": "0c8c8896183c",
+      "title": "Château de Villandry",
+      "latlng": "47.339854, 0.514315",
+      "youtubeId": "ApZmauu4OsY"
+    }
+    ,
+  
+    {
+      "guid": "eb96b65ba677",
+      "title": "Château de Montségur",
+      "latlng": "42.875758, 1.833194",
+      "youtubeId": "ImdcD3z9ZKc"
+    }
+    ,
+  
+    {
+      "guid": "5b36a04490a6",
+      "title": "Château de Cheverny",
+      "latlng": "47.500202, 1.457951",
+      "youtubeId": "8Sa1s8IIPaM"
+    }
+    ,
+  
+    {
+      "guid": "767c12afe748",
+      "title": "Pont de Normandie",
+      "latlng": "49.435100, 0.273605",
+      "youtubeId": "J57Klshns5Q"
+    }
+    ,
+  
+    {
+      "guid": "603eadcd7d65",
+      "title": "Cabourg",
+      "latlng": "49.293336, -0.115460",
+      "youtubeId": "s4dsaLR8Tpc"
+    }
+    ,
+  
+    {
+      "guid": "115071596adf",
+      "title": "Troyes - Coeur Historique",
+      "latlng": "48.296824, 4.073643",
+      "youtubeId": "6Rcdd8kw-3k"
+    }
+    ,
+  
+    {
+      "guid": "593e9bc638b2",
+      "title": "Les Tuileries",
+      "latlng": "48.863590, 2.327183",
+      "youtubeId": "idI-OAV8JGc"
+    }
+    ,
+  
+    {
+      "guid": "8388c456ca06",
+      "title": "Gare d'Orsay",
+      "latlng": "48.860894, 2.325387",
+      "youtubeId": "iG08W6GEpjg"
+    }
+    ,
+  
+    {
+      "guid": "e30027ae4ff6",
+      "title": "Château de Chambord",
+      "latlng": "47.616112, 1.517197",
+      "youtubeId": "eCtVkBIEMSw"
+    }
+    ,
+  
+    {
+      "guid": "e1b5fbf44ade",
+      "title": "Château de Blois",
+      "latlng": "47.585370, 1.330572",
+      "youtubeId": "s4ldbW0EvbE"
+    }
+    ,
+  
+    {
+      "guid": "d7ddd9e17726",
+      "title": "Baume les Messieurs",
+      "latlng": "46.709678, 5.646341",
+      "youtubeId": "dOEkTSk4np8"
+    }
+    ,
+  
+    {
+      "guid": "727b9ddb2a08",
+      "title": "Puy de Sancy",
+      "latlng": "45.528391, 2.813917",
+      "youtubeId": "d2WIPnUH2i4"
+    }
+    ,
+  
+    {
+      "guid": "563d24b58a56",
+      "title": "Pic du Midi",
+      "latlng": "42.936872, 0.141081",
+      "youtubeId": "0jzmOdWDpqE"
+    }
+    ,
+  
+    {
+      "guid": "1f42defb2878",
+      "title": "Dune du Pilat",
+      "latlng": "44.596715, -1.209580",
+      "youtubeId": "X8D69ibsddo"
+    }
+    ,
+  
+    {
+      "guid": "477abcb49a70",
+      "title": "Jardins de Monet",
+      "latlng": "49.075167, 1.534495",
+      "youtubeId": "Mfq6-3K15jM"
+    }
+    ,
+  
+    {
+      "guid": "a1d296acc31f",
+      "title": "Fort la Latte",
+      "latlng": "48.668335, -2.284828",
+      "youtubeId": "XPjX1I2MLTU"
+    }
+    ,
+  
+    {
+      "guid": "18e30174e6b0",
+      "title": "Château d'Arques",
+      "latlng": "42.953196, 2.367109",
+      "youtubeId": "M687lkngxEE"
+    }
+    ,
+  
+    {
+      "guid": "09f8b480dc42",
+      "title": "Château Fort de Sedan",
+      "latlng": "49.702191, 4.949198",
+      "youtubeId": "CYdm_Awozmc"
+    }
+    ,
+  
+    {
+      "guid": "465e0f84b58d",
+      "title": "Château de Foix",
+      "latlng": "42.965570, 1.604881",
+      "youtubeId": "3Iacc7HCzro"
+    }
+    ,
+  
+    {
+      "guid": "13f580ff24b5",
+      "title": "Château d'Amboise",
+      "latlng": "47.413355, 0.987014",
+      "youtubeId": "PRnOiJLwNiE"
+    }
+    ,
+  
+    {
+      "guid": "6d41ac641213",
+      "title": "Provins",
+      "latlng": "48.560759, 3.291555",
+      "youtubeId": "4FIzezsKb58"
+    }
+    ,
+  
+    {
+      "guid": "0f6693df6d36",
+      "title": "Château de Vaux-le-Vicomte",
+      "latlng": "48.565816, 2.714130",
+      "youtubeId": "MDLMZjZ55pI"
+    }
+    ,
+  
+    {
+      "guid": "1eca43f1d1bb",
+      "title": "Château de Fontainebleau",
+      "latlng": "48.402096, 2.699498",
+      "youtubeId": "j7c3UtqBh-s"
+    }
+    ,
+  
+    {
+      "guid": "abb63143efe5",
+      "title": "Château Gaillard",
+      "latlng": "49.238001, 1.403445",
+      "youtubeId": "hzRwqSRep1k"
+    }
+    ,
+  
+    {
+      "guid": "7abe291b5495",
+      "title": "Château de Pierrefonds",
+      "latlng": "49.346968, 2.980185",
+      "youtubeId": "EtU4359NFJU"
+    }
+    ,
+  
+    {
+      "guid": "6630f367c900",
+      "title": "Château de Lassay",
+      "latlng": "48.438840, -0.499853",
+      "youtubeId": "gxB89P1Qbco"
+    }
+    ,
+  
+    {
+      "guid": "446b9c2695a1",
+      "title": "Château de Queribus",
+      "latlng": "42.836773, 2.621491",
+      "youtubeId": "hxUiayoF5Ec"
+    }
+    ,
+  
+    {
+      "guid": "5906abed0051",
+      "title": "Château de Peyrepertuse",
+      "latlng": "42.870831, 2.555414",
+      "youtubeId": "0lu2i9smfG4"
+    }
+    ,
+  
+    {
+      "guid": "a1a78eab8276",
+      "title": "Château de Chantilly",
+      "latlng": "49.193854, 2.485171",
+      "youtubeId": "5QXy5INdcR4"
+    }
+    ,
+  
+    {
+      "guid": "6f9cdc1f4573",
+      "title": "Vannes",
+      "latlng": "47.656602, -2.753602",
+      "youtubeId": "L90EuZTOlPs"
+    }
+    ,
+  
+    {
+      "guid": "598e2cc4fd87",
+      "title": "Cap Ferret",
+      "latlng": "44.649277, -1.253594",
+      "youtubeId": "DEOvXP6JgsY"
+    }
+    ,
+  
+    {
+      "guid": "0cc16a67747e",
+      "title": "Parc du Puy du Fou",
+      "latlng": "46.889610, -0.928127",
+      "youtubeId": "IgOYMTWjF8w"
+    }
+    ,
+  
+    {
+      "guid": "a84f95d22b7b",
+      "title": "Château du Haut-Koenigsbourg",
+      "latlng": "48.249478, 7.344451",
+      "youtubeId": "_HYyS2BqX_4"
+    }
+    ,
+  
+    {
+      "guid": "b29070819fe6",
+      "title": "Cathédrale d'Orléans",
+      "latlng": "47.901824, 1.910240",
+      "youtubeId": "QTIlXKD6vHw"
+    }
+    ,
+  
+    {
+      "guid": "f5fe2a706381",
+      "title": "Cathédrale de Noyon",
+      "latlng": "49.582185, 3.000446",
+      "youtubeId": "OGeEMCtbB9U"
+    }
+    ,
+  
+    {
+      "guid": "8b71a3cde2a7",
+      "title": "Cathédrale d'Amiens",
+      "latlng": "49.894646, 2.302027",
+      "youtubeId": "6nLsTREky_U"
+    }
+    ,
+  
+    {
+      "guid": "68167be177b8",
+      "title": "Roscoff",
+      "latlng": "48.726703, -3.984268",
+      "youtubeId": "cQ8qW9e07Y8"
+    }
+    ,
+  
+    {
+      "guid": "04c325ca29e2",
+      "title": "Perros-Guirec",
+      "latlng": "48.815531, -3.444848",
+      "youtubeId": "k-JcKnqO3h4"
+    }
+    ,
+  
+    {
+      "guid": "8897b8fafba5",
+      "title": "Carantec",
+      "latlng": "48.667671, -3.913791",
+      "youtubeId": "SjvytkuRl2A"
+    }
+    ,
+  
+    {
+      "guid": "9b2841c73c3c",
+      "title": "Carennac",
+      "latlng": "44.918530, 1.732217",
+      "youtubeId": "0LsFkY6cLDY"
+    }
+    ,
+  
+    {
+      "guid": "3d911e8d03d4",
+      "title": "Autoire",
+      "latlng": "44.853759, 1.820328",
+      "youtubeId": "y4lrc8EwhHM"
+    }
+    ,
+  
+    {
+      "guid": "53cea26d3ce3",
+      "title": "Viaduc de Millau",
+      "latlng": "44.077532, 3.022837",
+      "youtubeId": "KtdTLPCdIww"
+    }
+    ,
+  
+    {
+      "guid": "4a4109ef3043",
+      "title": "Viaduc de Garabit",
+      "latlng": "44.973503, 3.173591",
+      "youtubeId": "GuP6zGUsWSs"
+    }
+    ,
+  
+    {
+      "guid": "2f7e3e89cc4e",
+      "title": "Le Crotoy",
+      "latlng": "50.216704, 1.622292",
+      "youtubeId": "2YV6VkESsFQ"
+    }
+    ,
+  
+    {
+      "guid": "e06c32c6792a",
+      "title": "Iles de Lérins",
+      "latlng": "43.512813, 7.046378",
+      "youtubeId": "nxbAlD7dzyo"
+    }
+    ,
+  
+    {
+      "guid": "dbdb75fcde07",
+      "title": "Château de Villesavin",
+      "latlng": "47.546520, 1.514291",
+      "youtubeId": "n7NCg5PIApg"
+    }
+    ,
+  
+    {
+      "guid": "d5c252460152",
+      "title": "Château de Sully-sur-Loire",
+      "latlng": "47.767612, 2.375289",
+      "youtubeId": "E0SFRPdcxI8"
+    }
+    ,
+  
+    {
+      "guid": "468a557b7b9a",
+      "title": "Château de Fougères",
+      "latlng": "48.353907, -1.209400",
+      "youtubeId": "c3j5DTojFT4"
+    }
+    ,
+  
+    {
+      "guid": "629867f1b5e6",
+      "title": "Château de Bonaguil",
+      "latlng": "44.538261, 1.014275",
+      "youtubeId": "YKGlm6cVWZg"
+    }
+    ,
+  
+    {
+      "guid": "2061f9818613",
+      "title": "Falaises d'Etretat",
+      "latlng": "49.706619, 0.194434",
+      "youtubeId": "TqfHTG9ools"
+    }
+    ,
+  
+    {
+      "guid": "33bf35fdd055",
+      "title": "Cité de Carcassonne",
+      "latlng": "43.206926, 2.364232",
+      "youtubeId": "QsIDNYXagHE"
+    }
+    ,
+  
+    {
+      "guid": "795053d16d95",
+      "title": "Ile de Ré",
+      "latlng": "46.191527, -1.394197",
+      "youtubeId": "qgKIvVfIAFM"
+    }
+    ,
+  
+    {
+      "guid": "25b7a35ac607",
+      "title": "Béziers",
+      "latlng": "43.344753, 3.215441",
+      "youtubeId": "Yxp5uLo6yJ8"
+    }
+    ,
+  
+    {
+      "guid": "f5962023f4a4",
+      "title": "Salers",
+      "latlng": "45.137981, 2.493692",
+      "youtubeId": "s7V-N2wLxQ8"
+    }
+    ,
+  
+    {
+      "guid": "0adb5fa5bed8",
+      "title": "Saint-Omer",
+      "latlng": "50.748581, 2.249238",
+      "youtubeId": "1_5OhyUard4"
+    }
+    ,
+  
+    {
+      "guid": "fe4a6957589c",
+      "title": "Guédelon - Château fort",
+      "latlng": "47.583396, 3.155021",
+      "youtubeId": "tbdolE7Hvzw"
+    }
+    ,
+  
+    {
+      "guid": "41aeb005e491",
+      "title": "Aven d'Orgnac",
+      "latlng": "44.318498, 4.412591",
+      "youtubeId": "hRgzVxrsOos"
+    }
+    ,
+  
+    {
+      "guid": "15f7f043e324",
+      "title": "Lavandes - Valensole",
+      "latlng": "43.837319, 5.983450",
+      "youtubeId": "U8AzaciQrcs"
+    }
+    ,
+  
+    {
+      "guid": "075fc1bda597",
+      "title": "Château de Chenonceau",
+      "latlng": "47.324877, 1.070311",
+      "youtubeId": "_K7NVN1JwRk"
+    }
+    ,
+  
+    {
+      "guid": "1720e6e222e9",
+      "title": "Place Stanislas - Nancy",
+      "latlng": "48.693633, 6.183220",
+      "youtubeId": "NwA5OBV99J8"
+    }
+    ,
+  
+    {
+      "guid": "9bc7f0fc021a",
+      "title": "La Rochelle",
+      "latlng": "46.156879, -1.152804",
+      "youtubeId": "Yl_gSA2AnPs"
+    }
+    ,
+  
+    {
+      "guid": "01745ed0dc74",
+      "title": "Château de Versailles",
+      "latlng": "48.804828, 2.120123",
+      "youtubeId": "ND5h5PXvBhk"
+    }
+    ,
+  
+    {
+      "guid": "021339f4ef1e",
+      "title": "Château de Cormatin",
+      "latlng": "46.543145, 4.684203",
+      "youtubeId": "FGo0yBKEcdE"
+    }
+    ,
+  
+    {
+      "guid": "7e6444496eb1",
+      "title": "Moustiers-Sainte-Marie",
+      "latlng": "43.847012, 6.221493",
+      "youtubeId": "n-bqGOlEp9E"
+    }
+    ,
+  
+    {
+      "guid": "dae28b897087",
+      "title": "Les Baux de Provence",
+      "latlng": "43.743845, 4.795432",
+      "youtubeId": "N_-9U-5_hF4"
+    }
+    ,
+  
+    {
+      "guid": "0573c74433bf",
+      "title": "Rocamadour",
+      "latlng": "44.799366, 1.616278",
+      "youtubeId": "-HDXn16rvvs"
+    }
+    ,
+  
+    {
+      "guid": "5f216ffb9f33",
+      "title": "Calvi",
+      "latlng": "42.568433, 8.760687",
+      "youtubeId": "pN44-SD2D1A"
+    }
+    ,
+  
+    {
+      "guid": "8d6e8dc32cda",
+      "title": "Saint Cirq Lapopie",
+      "latlng": "44.464609, 1.669130",
+      "youtubeId": "l6tPe9bGOF8"
+    }
+    ,
+  
+    {
+      "guid": "22c9bbce7748",
+      "title": "Abbaye de Fontenay",
+      "latlng": "47.639604, 4.389336",
+      "youtubeId": "uSbSD3zUVpk"
+    }
+    ,
+  
+    {
+      "guid": "b3db347bb3db",
+      "title": "Sacré Coeur de Montmartre",
+      "latlng": "48.886811, 2.343011",
+      "youtubeId": "qoI4ZkrymBc"
+    }
+    ,
+  
+    {
+      "guid": "b154a293b02e",
+      "title": "Biarritz - Pointe Saint-Martin",
+      "latlng": "43.493775, -1.553902",
+      "youtubeId": "fd1LGYbP9hU"
+    }
+    ,
+  
+    {
+      "guid": "9d1b8963a681",
+      "title": "Nice",
+      "latlng": "43.697541, 7.259902",
+      "youtubeId": "sJERa0yzn5Q"
+    }
+    ,
+  
+    {
+      "guid": "3504d836612b",
+      "title": "Le Mont Saint-Michel",
+      "latlng": "48.635971, -1.511478",
+      "youtubeId": "1gXsWComxjo"
+    }
+    ,
+  
+    {
+      "guid": "74b71b32c51b",
+      "title": "Le Cap Blanc Nez - Cote d'Opale",
+      "latlng": "50.924056, 1.705176",
+      "youtubeId": "KK9yW65gkUI"
+    }
+    ,
+  
+    {
+      "guid": "a9135e212af6",
+      "title": "Antibes",
+      "latlng": "43.584991, 7.121372",
+      "youtubeId": "qxHQj6rrj_w"
+    }
+    
+  
+]);

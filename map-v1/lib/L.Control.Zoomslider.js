@@ -1,5 +1,3 @@
-// http://kartena.github.io/Leaflet.zoomslider/
-
 L.Control.Zoomslider = (function () {
 
 	var Knob = L.Draggable.extend({

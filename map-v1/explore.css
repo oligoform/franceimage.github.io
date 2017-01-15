@@ -1,0 +1,226 @@
+	/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+	html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+	#page {
+		padding-top: 60px;
+	}
+	
+	#header {
+		background: #0732a2;
+		color: #ffffff;
+		height: 60px;
+		left: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 1000000;
+	}
+	
+	#header ul {
+	}
+	
+	#header li {
+		display: inline;
+		padding: 5px;
+	}
+	
+	#header li:hover {
+		background: #697AA8;
+	}
+	
+	#header #searchform {
+		display: inline;
+	}
+
+	input#search {
+		border-radius: 5px;
+	}	
+	
+	.resultItem {
+		margin: 5px;
+	}
+	
+	.resultItem a {
+		color: #808080;
+	}
+	
+	.resultItem a:hover {
+		color: #000000;
+	}
+	
+	#infoPanel {
+	    position: fixed;
+    	left: 50%;
+    	top: 50%;
+    	background-color: white;
+   		 z-index: 10000;
+
+	    height: 400px;
+	    margin-top: -200px;
+	
+	    width: 600px;
+	    margin-left: -300px;
+	    
+	    background-color: #f0f0f0;
+		border-color: #c0c0c0;
+	    /*border-radius*/
+-webkit-border-radius:10px;
+   -moz-border-radius:10px;
+        border-radius:10px;
+    	border-style: solid;
+    	border-width: 2px;
+	    
+	    display: none;
+	}
+	
+	#closeInfoPanel {
+		cursor: pointer;
+		float: right;
+		margin: 5px;
+	}
+	
+	#content {
+		position: relative;
+		z-index: 2;
+	}
+	
+	#mapView {
+		bottom: 0;
+		left: 400px;
+		position: fixed;
+		right: 0;
+		top: 60px;
+		z-index: 1;
+	}
+
+	#mapView #mapCanvas {
+		height: 100%;
+		overflow: hidden;
+	}	
+	
+	#listingView {
+		position: relative;
+		width: 400px;
+		z-index: 2;
+	}
+	
+	
+	.leaflet-popup-content {
+		text-align: center;
+	}
+	
+	.leaflet-popup-content a {
+		text-decoration: none;
+	}
+	
+	.leaflet-rrose-content {
+		max-width: 200px;
+		text-align: center;
+	}
+	
+	.sticky .leaflet-popup-content-wrapper  {
+		background-color: #FFFF99;
+	}
+	
+	div.circle {
+	    background-color: #ff7800;
+    	border-color: black;
+    	/*border-radius*/
+-webkit-border-radius:50%;
+   -moz-border-radius:50%;
+        border-radius:50%;
+    	border-style: solid;
+    	border-width: 1px;
+    	opacity: 0.9;
+	}
+	
+	div.circle.hover {
+	    background-color: #606060;
+	}
+	
+	div.circle.selected {
+	    background-color: #000000;
+	}
+	
+	
+	.clickable {
+		cursor: pointer;
+	}
+	
+	div.postContent {
+		position: relative;
+		padding: 5px;
+		margin: 5px;
+		border-color: #e0e0e0;
+    	/*border-radius*/
+-webkit-border-radius:10px;
+   -moz-border-radius:10px;
+        border-radius:10px;
+    	border-style: solid;
+    	border-width: 2px;
+	}
+	
+	div.postContent.hover {
+	    background-color: #f0f0f0;
+		border-color: #c0c0c0;
+	}
+	
+	div.postContent.selected {
+	    background-color: #e0e0e0;
+		border-color: #c0c0c0;
+	}
+	
+	div.postContent img {
+    	/*border-radius*/
+-webkit-border-radius:10px;
+   -moz-border-radius:10px;
+        border-radius:10px;
+	}
+	
+	div.postContent h4 {
+		font-size: 25px;
+	}
+	
+	div.cmdContainer {
+		float: right;
+		display: none;
+	}
+	
+	div.postContent h4 a, a:link, a:visited, a:active {
+		text-decoration: none;
+	}
+	
+	a.linkToPost, a.zoomOnPost {
+		display: block;
+	}
+	
+	/* loading page */
+	/* Generated with http://ajaxload.info/ */
+	.loading {
+		background-image: url("images/loading66.gif");
+		width: 66px;
+		height: 66px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -33px;
+		margin-top: -33px;
+		z-index: 1000;
+	}
+	
+	
+	.leaflet-control-zoomslider {
+		opacity: 0.5;
+	}
+	
+		
+	.centerMap {
+		background-image: url("images/geolocation24.png");
+		background-repeat: no-repeat;
+		padding-left: 26px;
+		line-height: 24px;
+		vertical-align: middle;
+		display: block;
+		color: #808080;
+	}
+	
