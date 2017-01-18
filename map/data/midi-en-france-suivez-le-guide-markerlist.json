@@ -1,4 +1,6 @@
 processJSON([
+{"guid":"fbc3f9f96727","title":"La gare de Saint-Etienne : un terminus musical","latlng":"45.437020, 4.378463","youtubeId":"tZ1X7U68mvo"},
+{"guid":"781964fadb52","title":"Dans les coulisses d'un artisan chocolatier ligérien","latlng":"45.436180, 4.389334","youtubeId":"oUUb4Ch5kQU"},
 {"guid":"fb9f880613b5","title":"La cité du design : un lieu emblématique","latlng":"45.450380, 4.384920","youtubeId":"hcB68etTfg0"},
 {"guid":"acc58514a874","title":"L'abbaye de Charlieu : la Loire moyenâgeuse","latlng":"46.157841, 4.168249","youtubeId":"I8GopzUCg_I"},
 {"guid":"8ccd675abd75","title":"L'abbaye de Royaumont : un havre de paix pour les artistes","latlng":"49.147442, 2.381864","youtubeId":"nue_tGypEwM"},
@@ -121,7 +123,7 @@ processJSON([
 {"guid":"ca70b3adba07","title":"A Bayonne, une maison d'hôtes qui flotte","latlng":"43.497698, -1.484496","youtubeId":"qiH2kyyc2l0"},
 {"guid":"0a704f4e6a63","title":"Le Sud-Ouest, terre d'inspiration pour un dessinateur anglais","latlng":"43.759316, -0.573781","youtubeId":"Gft5on-CzPI"},
 {"guid":"de5b8a5e6590","title":"A Bordeaux, la librairie Mollat est une véritable institution","latlng":"44.840850, -0.578593","youtubeId":"c7_rUeyuKS8"},
-{"guid":"29f1077ffe1c","title":"La dune du Pilat, un coup de coeur à partager","latlng":"","youtubeId":"flYLRWEFuME"},
+{"guid":"29f1077ffe1c","title":"La dune du Pilat, un coup de coeur à partager","latlng":"44.595554, -1.209580","youtubeId":"flYLRWEFuME"},
 {"guid":"da1745ca74cc","title":"L'Europe en échasses, le grand tour d'un jeune landais","latlng":"","youtubeId":"8Xup2BQVVL0"},
 {"guid":"0adbac3c6cc4","title":"L'esprit paysan se cultive à l'Ecomusée de Marquèse","latlng":"","youtubeId":"bsXj4dJWVwI"},
 {"guid":"839ac618d284","title":"A Biscarrosse, des cabanes pour un grand bol d'air","latlng":"","youtubeId":"mUP-3Y3H30A"},
