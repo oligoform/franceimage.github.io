@@ -42,9 +42,14 @@
 	L.control.scale().addTo(map);
 		
 	// create the tile layer with correct attribution
-	L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-	}).addTo(map);
+	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZnJhbmNlaW1hZ2UiLCJhIjoieXJhTmZkTSJ9.rR0uVaO6Wuls8PUTrQ1J6A', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+		id: 'mapbox.streets'
+	}).addTo(map);	
+	
 	
 	map.setView(new L.LatLng(stateObj.lat, stateObj.lng), stateObj.zoom);
 
