@@ -1,4 +1,6 @@
 processJSON([
+{"guid":"cf5a620263c8","title":"Saint-Etienne : une ville meublée par son passé industriel","latlng":"45.419339, 4.393215","youtubeId":"QYmRfcE8lg0"},
+{"guid":"3d24a3084414","title":"Saint-Jean-Saint-Maurice-Sur-Loire : un balcon sur l'eau","latlng":"45.964574, 4.011509","youtubeId":"9JLaUYybBsQ"},
 {"guid":"fbc3f9f96727","title":"La gare de Saint-Etienne : un terminus musical","latlng":"45.437020, 4.378463","youtubeId":"tZ1X7U68mvo"},
 {"guid":"781964fadb52","title":"Dans les coulisses d'un artisan chocolatier ligérien","latlng":"45.436180, 4.389334","youtubeId":"oUUb4Ch5kQU"},
 {"guid":"fb9f880613b5","title":"La cité du design : un lieu emblématique","latlng":"45.450380, 4.384920","youtubeId":"hcB68etTfg0"},
