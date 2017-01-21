@@ -1,4 +1,4 @@
-processJSON([
+[
   
     {
       "guid": "84e1d9c30858",
@@ -2376,4 +2376,4 @@ processJSON([
     }
     
   
-]);
+]

@@ -1,4 +1,4 @@
-processJSON([
+[
 {"guid":"be1b1b5d6443","title":"Chateau de Meauce","latlng":"46.902845, 3.059111","youtubeId":"1NSQPOuPz_A"},
 {"guid":"6e51a8638ae3","title":"Chateau de Montcony","latlng":"46.701130, 5.292148","youtubeId":"gd-0dJpi0v0"},
 {"guid":"edddc92b73ea","title":"Château de la Prune au Pot","latlng":"46.51694, 1.55629","youtubeId":"L1EBC1h2zUE"},
@@ -31,4 +31,4 @@ processJSON([
 {"guid":"23ae1e83f81b","title":"Dun sous Racho 2","latlng":"","youtubeId":"05Bifrf1zMY"},
 {"guid":"05fe4b664b7a","title":"Saint Martin de Laives final 1","latlng":"46.638931, 4.854098","youtubeId":"nslr8q1Q3nk"},
 {"guid":"df2a74cf0857","title":"DJI Phantom 2 Test sur église de la Loyere XI siecle","latlng":"46.844535, 4.823659","youtubeId":"ht9BL6XS_ew"}
-]);
+]

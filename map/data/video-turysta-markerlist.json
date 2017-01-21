@@ -1,4 +1,4 @@
-processJSON([
+[
 {"guid":"4223351f5f84","title":"Barbegal aqueduct and mill, Arles / Fontvieille. France, Provence [HD] (videoturysta.eu)","latlng":"43.703929, 4.721401","youtubeId":"wqG31mM-Maw","publishedAt":"2017-01-18T15:47:21.000Z"},
 {"guid":"31558acdbfa8","title":"Séguret, France, Provence [HD] (videoturysta.eu)","latlng":"44.205100, 5.023722","youtubeId":"dk0tg-oATX8","publishedAt":"2017-01-04T15:32:35.000Z"},
 {"guid":"705f778cc512","title":"[4K] Château d'Estoublon apres rénovation - Château d'Estoublon after renovation (videoturysta.eu)","latlng":"43.733543, 4.740694","youtubeId":"d8dQhd6SZzI","publishedAt":"2016-12-28T16:38:37.000Z"},
@@ -306,4 +306,4 @@ processJSON([
 {"guid":"dff835a14ecc","title":"Antibes, French Riviera, France [HD] (videoturysta)","latlng":"","youtubeId":"B_-wyV0USU4","publishedAt":"2012-07-01T15:37:14.000Z"},
 {"guid":"b26974cbe24f","title":"Cannes, French Riviera, France [HD] (videoturysta)","latlng":"","youtubeId":"KrQ0DBv3cI8","publishedAt":"2012-07-01T15:36:28.000Z"},
 {"guid":"f813086c6aa8","title":"A man with 4 legs in Cannes - Funny Video [HD] (videoturysta)","latlng":"","youtubeId":"DWRtSIR5shk","publishedAt":"2012-07-01T15:36:14.000Z"}
-]);
+]

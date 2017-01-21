@@ -212,10 +212,10 @@
 		if(url) {
 			$.ajax({
 			    url: url,
-			    //jsonpCallback: "processJSON",
 			    jsonp: false,
-			    dataType: "jsonp"
+			    dataType: "json"
 			}).done(function(data){
+				processJSON(data);
 			});
 		}
 		sidebar.close();

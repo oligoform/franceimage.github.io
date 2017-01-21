@@ -1,4 +1,4 @@
-processJSON([
+[
 {"guid":"3ef4e3eafbdd","title":"Chartreuse de Neuville","latlng":"50.471631, 1.789630","youtubeId":"37xciKPCQCg"},
 {"guid":"e5a929e8b0df","title":"Pont-Transbordeur de Rochefort","latlng":"45.916091, -0.960630","youtubeId":"j5jVo7vQtlk"},
 {"guid":"0559d2e7caba","title":"Gare des Benedictins de Limoges","latlng":"45.836254, 1.267535","youtubeId":"DeKycZqGBug"},
@@ -140,4 +140,4 @@ processJSON([
 {"guid":"ed541f34e1a3","title":"Abbaye de Fontevraud","latlng":"47.180849, 0.052393","youtubeId":"ujpcYWyH6Jg"},
 {"guid":"8e9f0065f0a3","title":"Centre Minier de Lewarde","latlng":"50.331882, 3.172302","youtubeId":"kZZIaCfMZKI"},
 {"guid":"f82500192503","title":"Arènes de Nîmes","latlng":"43.834881, 4.359625","youtubeId":"Vojt-Ow9KrA"}
-]);
+]

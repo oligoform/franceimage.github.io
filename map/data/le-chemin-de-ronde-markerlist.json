@@ -1,4 +1,4 @@
-processJSON([
+[
 {"guid":"36e80db7fdbd","title":"Aiguilhe - Les fresques de la chapelle Saint-Michel","latlng":"45.049999, 3.882527","youtubeId":"1JPVFhqTtlc"},
 {"guid":"b8fb63a8f514","title":"Brioude - Les fresques de la chapelle Saint-Michel","latlng":"45.293621, 3.384482","youtubeId":"LqK4eArdf0w"},
 {"guid":"e202ec48751d","title":"Le Château de Pirou - Ancien Château Fort Normand","latlng":"49.161471, -1.573486","youtubeId":"wGmcMNETU5A"},
@@ -53,4 +53,4 @@ processJSON([
 {"guid":"ead80ab9721a","title":"The Ruins of Quéribus","latlng":"42.836764, 2.621442","youtubeId":"KMiQ065dkUY"},
 {"guid":"261ffab688b0","title":"The Ruins of Peyrepertuse","latlng":"42.870822, 2.555429","youtubeId":"O616dXuHnig"},
 {"guid":"2099fd593b35","title":"The Ruins of Montségur","latlng":"42.875813, 1.833139","youtubeId":"OiSu4x9oV98"}
-]);
+]

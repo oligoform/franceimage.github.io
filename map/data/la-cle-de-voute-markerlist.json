@@ -1,4 +1,4 @@
-processJSON([
+[
 {"guid":"242dfef03513","title":"Cathédrale de Cahors - Architecture et Sculpture","latlng":"44.447299, 1.443056","youtubeId":"Ty-9NLrFxcw"},
 {"guid":"464d51b04cf7","title":"Rocamadour - Une Cité Sanctuaire","latlng":"44.799388, 1.617590","youtubeId":"pHNgcTuesbg"},
 {"guid":"b29b35c67037","title":"La Roque-Gageac - Un Village Entre Falaises et Rivière","latlng":"44.825601, 1.182912","youtubeId":"-28c8px63hE"},
@@ -77,4 +77,4 @@ processJSON([
 {"guid":"1c530ea0108b","title":"Châteaux de Lastours","latlng":"43.336461, 2.377831","youtubeId":"VKUK3RS_N14"},
 {"guid":"21c0050dc2df","title":"Château comtal de Carcassonne","latlng":"43.207083, 2.363130","youtubeId":"ePacZjdNhIg"},
 {"guid":"b7356c629083","title":"Cité de Carcassonne","latlng":"43.206042, 2.364303","youtubeId":"7SlbRW3WDi8"}
-]);
+]

@@ -1,4 +1,4 @@
-processJSON([
+[
 {"guid":"32db5cdad615","title":"Montarcher : la plus haute commune de la Loire","latlng":"45.458690, 3.995794","youtubeId":"hhzSjfAIBy4"},
 {"guid":"1e25ccc2b394","title":"Le château d'Origny : une restauration à taille humaine","latlng":"46.023213, 4.017097","youtubeId":"kX6vkQ9STLg"},
 {"guid":"cf5a620263c8","title":"Saint-Etienne : une ville meublée par son passé industriel","latlng":"45.419339, 4.393215","youtubeId":"QYmRfcE8lg0"},
@@ -693,4 +693,4 @@ processJSON([
 {"guid":"30d0efea1ff9","title":"Suivez le guide : Antigone, un quartier moderne en plein centre-ville","latlng":"","youtubeId":"JznPACLvwqE"},
 {"guid":"14ffc85ed22a","title":"Suivez le guide : Mille ans d'histoire au coeur de Montpellier","latlng":"","youtubeId":"PtjJrk1Ep_U"},
 {"guid":"012b7c4c30fa","title":"Suivez le guide : À Chaumont-sur-Loire, les jardins sont rois","latlng":"47.478367, 1.185693","youtubeId":"j1__cX2U0qI"}
-]);
+]

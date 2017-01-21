@@ -1,4 +1,4 @@
-processJSON([
+[
 {"guid":"e6caa3d20fba","title":"Rochefort-en-terre","latlng":"47.699201, -2.337428","youtubeId":"fA7NNs67_7E"},
 {"guid":"06ec820eb7eb","title":"Vogüé","latlng":"44.550193, 4.415807","youtubeId":"PvRMwT_9Y-s"},
 {"guid":"6cc1b3872bed","title":"Courances","latlng":"48.441600, 2.469918","youtubeId":"DhU_waeG0zQ"},
@@ -114,4 +114,4 @@ processJSON([
 {"guid":"4f20ee890aa2","title":"Saint-Suliac","latlng":"48.569827, -1.973245","youtubeId":"wJdvsMfXU0g"},
 {"guid":"1f3cd6b5c85d","title":"Yvoire","latlng":"46.371382, 6.325944","youtubeId":"zoPosIBRAH4"},
 {"guid":"c10712210549","title":"Le-Bec-Hellouin","latlng":"49.228557, 0.720929","youtubeId":"5D4rszoI9lk"}
-]);
+]

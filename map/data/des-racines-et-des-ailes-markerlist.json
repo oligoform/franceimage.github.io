@@ -1,4 +1,4 @@
-processJSON([
+[
 {"guid":"3496a5909257","title":"Au fil du Rhône, entre Camargue et coteaux du Lyonnais - Emission intégrale","latlng":"","youtubeId":"BenBBPy_k-M"},
 {"guid":"d8ee72861542","title":"Le château de Tarascon, sur les rives du Rhône","latlng":"43.806466, 4.655030","youtubeId":"NC_rQzL3e-I"},
 {"guid":"4dde2f3d0fa2","title":"Écluses du Rhône : tout est géré à distance par le CGN","latlng":"","youtubeId":"Mf7gBINri4A"},
@@ -680,4 +680,4 @@ processJSON([
 {"guid":"c2248289c247","title":"Terre de Gascogne - Bande-annonce","latlng":"","youtubeId":"6bOg482kIH0"},
 {"guid":"086b156d0527","title":"Survol du Cap Corse","latlng":"43.007680, 9.419655","youtubeId":"VrM1dQCBnjQ"},
 {"guid":"e6a7c72cdc5c","title":"La Corse autrement - Bande-annonce","latlng":"","youtubeId":"z6rBXXvKSU4"}
-]);
+]
