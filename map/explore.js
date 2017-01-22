@@ -1,3 +1,7 @@
+/*
+ (c) 2017 https://github.com/yafred
+*/
+
 	/**
 	 * global variables
 	 */
@@ -93,16 +97,41 @@
 	/**
 	 * Map event handlers
 	 */
-	map.on('resize', function(e) {
+	map.on('resize movestart zoom', clearPostSelection);
+	map.on('movestart', closeSideBar);
+	map.on('moveend', mapMoved);
+	map.on('click', mapClicked);
+
+	/**
+	 * Sidebar event handlers
+	 */
+	sidebar.on('content', sidebarOpened);
+
+	/**
+	 * Let's go
+	 */
+	switchToChannel(stateObj.channelId, false);
+
+
+	
+	
+	/**
+	 * Functions
+	 */
+
+	function clearPostSelection() {
 		if(stateObj.selectedPostId != -1) {
 			markersByGlobalId[stateObj.selectedPostId]._resetZIndex();
 			markersByGlobalId[stateObj.selectedPostId].setIcon(markerIcon);
 			stateObj.selectedPostId = -1;
+			updateHistory();
 		}
-		updateStickyPopup();			
-	});
+		updateStickyPopup();					
+	}
 	
-	map.on('movestart', function(e) {
+	
+
+	function closeSideBar() { 
 		sidebar.close();
 		var postListContainer = $("#aroundList");
 		
@@ -115,12 +144,11 @@
 		if (postListContainer[0]) {
 			postListContainer.empty();
 		}
-	});
+	}
 	
-	map.on('move', function(e) {
-	});
 	
-	function mapMoveEnd(e) {
+	
+	function mapMoved(e) {
 		stateObj.lat = map.getCenter().lat.toFixed(6);
 		stateObj.lng = map.getCenter().lng.toFixed(6);
 		stateObj.zoom = map.getZoom();
@@ -132,21 +160,17 @@
 
 		updateHistory();
 	}
-	map.on('moveend', mapMoveEnd);
 	
-	map.on('click', function(e) {
+	
+	
+	function mapClicked() {
 		if (!$('#sidebar').hasClass('collapsed')) {
 			sidebar.close();
+			updateStickyPopup(); // click may have closed a popup
 		}
 		else {
-			if(stateObj.selectedPostId != -1) {
-				markersByGlobalId[stateObj.selectedPostId]._resetZIndex();
-				markersByGlobalId[stateObj.selectedPostId].setIcon(markerIcon);
-				stateObj.selectedPostId = -1;
-				updateHistory();
-			}
+			clearPostSelection();
 		}
-		updateStickyPopup();
 	
 		// if click in the center of the map, open sidebar
 		var centerPoint = map.latLngToContainerPoint(map.getCenter());
@@ -156,12 +180,11 @@
 		if(pixelsFromEventToCenter < centerDiameter/2 + 1) {
 			sidebar.open('aroundPanel');
 		}
-	});
+	}
 	
-	/**
-	 * Sidebar event handlers
-	 */
-	sidebar.on('content', function(e) {
+
+	
+	function sidebarOpened(e) {
 		// track if possible
 		if(typeof ga == 'function') { 
 			ga('send', 'event', {
@@ -182,21 +205,10 @@
 			refreshChannelListView();
 			break;
 		}
-	});
+	}
 	
-	sidebar.on('closing', function(e) {
-	});
-
 	
-	/**
-	 * Let's go
-	 */
-	switchToChannel(stateObj.channelId, false);
-
 	
-	/**
-	 * Functions
-	 */
 	function switchToChannel(channelId, triggeredFromChannelsView) {
 		var triggeredFromChannelsView = (typeof triggeredFromChannelsView !== 'undefined') ?  triggeredFromChannelsView : true;
 		if(triggeredFromChannelsView) {
@@ -225,7 +237,7 @@
 	}
 	
 	
-	// Parse JSON input
+	
 	function processJSON(data) {
 		postlist = [];
 		markersByGlobalId = {};	// key: postId	
@@ -258,7 +270,7 @@
 	}
 	
 	
-	// Initialize marker
+	
 	function initMarker(m) {
 		markers.addLayer(m);
 		m.on('click', markerClicked);
@@ -287,7 +299,6 @@
 
 
 	
-	// Marker clicked
 	function markerClicked(e) {
 		var doShowTooltip = false;
 		if (stateObj.selectedPostId == -1) {
@@ -318,10 +329,9 @@
 		
 		updateHistory();
 	}
-	
 		
 
-	// Refresh view
+	
 	function refreshChannelListView() {
 		var postListContainer = $("#aroundList");
 		
@@ -358,7 +368,7 @@
 	}
 	
 	
-	// Refresh view
+	
 	function refreshPostlistView() {
 		var postListContainer = $("#aroundList");
 		
@@ -383,7 +393,7 @@
 	}
 	
 	
-	// Refresh view
+	
 	function refreshMarkersAroundView() {
 		
 		postListContainer = $("#postList");
@@ -419,7 +429,7 @@
 	}
 	
 
-	// Bind events to postContent 
+	
 	function bindPostContentEvents() {
 		// add event handlers
 		$("img.lazy").lazyload({
@@ -462,12 +472,10 @@
 				markersByGlobalId[postId].setIcon(markerIcon);
 			}
 		});
-		
-
 	}
 
 	
-	// Post div clicked
+	
 	function postClicked(e) {
 		sidebar.close();
 		var postId = $(this).attr("data-postId");
@@ -475,7 +483,7 @@
 	}
 	
 
-	// Show tooltip of postId
+	
 	function showTooltip(postId) {
 		tooltipPopup =  L.responsivePopup({ offset: new L.Point(10,10), closeButton: false, autoPan: false });		
 		tooltipPopup.setContent(Mustache.render(tooltipTpl, postlistByGlobalId[postId]) );
@@ -486,7 +494,7 @@
 	}
 	
 	
-	// Close sticky popup and open a new one if needed
+	
 	function updateStickyPopup() {
 		map.closePopup(tooltipPopup);
 		map.removeLayer(stickyPopup);
@@ -503,14 +511,19 @@
 	}
 	
 	
-	// Center map on postId 
+	
 	function centerMapOnPost(postId) {
-		map.off('moveend', mapMoveEnd);
+		map.off('moveend', mapMoved);
+		map.off('movestart', clearPostSelection);
 		map.panTo(markersByGlobalId[postId].getLatLng(), { duration: .25 });
-		setTimeout(function(){ map.on('moveend', mapMoveEnd); }, 300);
+		setTimeout(function(){ 
+			map.on('moveend', mapMoved); 
+			map.on('movestart', clearPostSelection); 
+		}, 300);
 	}
 	
-	// Make postId selected
+
+	
 	function selectPost(postId) {
 		if (stateObj.selectedPostId == -1) {
 			stateObj.selectedPostId = postId;
@@ -532,7 +545,8 @@
 		updateHistory();
 	}
 	
-	// Follow Link
+	
+
 	function followLinkFromPost(postId) {
 		stateObj.selectedPostId = postId;
 		updateHistory();
@@ -553,7 +567,8 @@
 		}		
 	}	
 
-	// Utilities
+
+	
 	function updateHistory() {
 		// Update history
 		var parms = "llz=" + stateObj.lat + "," + stateObj.lng + "," + stateObj.zoom;
@@ -570,7 +585,6 @@
 	}
 	
 	
-
 	
 	function getPostOnMapCenter() {	
 		// Sort it
