@@ -316,9 +316,6 @@
 			showTooltip(e.target.postId);
 		}
 		
-		// scroll does not yet 
-		// if (stateObj.selectedPostId != -1) { scrollToSelectedOrFirst(); }
-		
 		updateHistory();
 	}
 	
@@ -326,6 +323,12 @@
 
 	// Refresh view
 	function refreshChannelListView() {
+		var postListContainer = $("#aroundList");
+		
+		if (postListContainer[0]) {
+			postListContainer.empty();
+		}
+
 		postListContainer = $("#postList");
 		
 		if (postListContainer[0]) {
@@ -567,34 +570,6 @@
 	}
 	
 	
-	function scrollToSelectedOrFirst() {
-		var success = false;
-		var container = $(".sidebar-content");
-		var padding = parseInt($("#postList").css("padding-top")) + parseInt($(".postContent").css("margin-top"));
-
-		if (stateObj.selectedPostId != -1) {
-		    var scrollTo = $("div.postContent[data-postId=" + stateObj.selectedPostId + "]");
-			
-			if(scrollTo.offset()) {
-				container.animate({
-					scrollTop: scrollTo.offset().top - padding
-				});
-				success = true;
-			}
-		}
-		
-		if(!success) {
-		    var scrollTo = $("div.postContent").first();
-			
-			if(scrollTo.offset()) {
-				container.animate({
-					scrollTop: scrollTo.offset().top - padding
-				});
-			}
-		}
-	}
-
-
 
 	
 	function getPostOnMapCenter() {	
