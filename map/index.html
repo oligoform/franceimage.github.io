@@ -52,6 +52,7 @@
 			<img class="lazy" data-original="{{ thumbnail }}" src="{{ thumbnail }}" /> 
 		</div>
 		<div class="cmdContainer">
+			<a href="javascript:clearPostSelection()"><i class="fa fa-times"></i></a>
 			<a href="javascript:centerMapOnPost('{{ guid }}')"><i class="fa fa-dot-circle-o"></i></a>
 			<a href="javascript:followLinkFromPost('{{ guid }}')"><i class="fa fa-youtube-play"></i></a>
 		</div>
@@ -123,10 +124,10 @@
             <div class="sidebar-pane text-panel" id="info">
 			<section class="fr">
             <p>Quelques trucs ...</p>
-            <p>Vous pouvez passer sur les points avec la souris et cliquer dessus. Vous pouvez aussi amener les points au centre de la carte. Dans les 2 cas, une popup apparaîtra.</p>
+            <p>Points: Vous pouvez passer sur les points avec la souris et cliquer dessus. Vous pouvez aussi amener les points au centre de la carte. Dans les 2 cas, une popup apparaîtra.</p>
             <p>Popup: cliquez sur <i class="fa fa-youtube-play"></i> pour voir la video. Une fois sur youtube, utilisez le bouton back pour retrouver la carte dans le même état.</p>
             <p>Popup: cliquez sur <i class="fa fa-dot-circle-o"></i> centrer la carte sur ce point (utile quand vous allez zoomer).</p>
-            <p>Popup: cliquez sur la carte pour la cacher.</p>
+            <p>Popup: cliquez sur <i class="fa fa-times"></i> ou sur la carte pour la cacher.</p>
             <p>Barre latérale: cliquez sur <i class="fa fa-bars"></i> pour voir une autre liste.</p>
             <p>Barre latérale: cliquez sur <i class="fa fa-dot-circle-o"></i> voir la liste des videos. La video la plus proche de centre de la carte vient en premier. Cliquer sur la video pour la fixer sur la carte.</p>
             <p>Barre latérale: cliquez sur <i class="fa fa-list"></i> voir la liste des videos. La plus récente vient en premier.</p>  
@@ -134,10 +135,10 @@
             </section>        
             <section class="en">
             <p>A few hints ...</p>
-            <p>Hover on the markers and click on them. Alternatively, bring the markers to the center of the map. This will open a popup.</p>
+            <p>Markers: Hover on the markers and click on them. Alternatively, bring the markers to the center of the map. This will open a popup.</p>
             <p>Popup: click on <i class="fa fa-youtube-play"></i> to watch the video. When you are on youtube, use back button to find your map in the same state.</p>
             <p>Popup: click on <i class="fa fa-dot-circle-o"></i> to center the map on this point (useful if you want to zoom in).</p>
-            <p>Popup: click on the map to close it.</p>
+            <p>Popup: click on <i class="fa fa-times"></i> or on the map to close it.</p>
             <p>Sidebar: click on <i class="fa fa-bars"></i> to select another list of videos.</p>
             <p>Sidebar: click on <i class="fa fa-dot-circle-o"></i> to show the list of videos. The nearest to the center of the map comes first. Click on a video to pin it on the map.</p>
             <p>Sidebar: click on <i class="fa fa-list"></i> to show the list of videos. The first (most recent) in the playlist comes first.</p>      

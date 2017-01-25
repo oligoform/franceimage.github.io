@@ -198,8 +198,8 @@ div.circle.selected {
 .leaflet-popup .cmdContainer .fa {
 	margin-bottom: 3px;
 	font-size: 25px;
-	margin-left: 25px;
-	margin-right: 25px;
+	margin-left: 10px;
+	margin-right: 10px;
 	color: grey;
 }
 
@@ -223,8 +223,8 @@ div.circle.selected {
 	
 	.leaflet-popup .cmdContainer .fa {
 		font-size: 35px;
-		margin-left: 35px;
-		margin-right: 35px;
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 }
 
