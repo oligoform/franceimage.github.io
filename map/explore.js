@@ -212,15 +212,6 @@
 	function switchToChannel(channelId, triggeredFromChannelsView) {
 		var triggeredFromChannelsView = (typeof triggeredFromChannelsView !== 'undefined') ?  triggeredFromChannelsView : true;
 		if(triggeredFromChannelsView) {
-			// track if possible
-			if(typeof ga == 'function') { 
-				ga('send', 'event', {
-				    eventCategory: 'channel',
-				    eventAction: 'switch',
-				    eventLabel: channelId
-				});
-			}
-
 			stateObj.selectedPostId = -1;
 		}
 		
@@ -276,6 +267,16 @@
 			markersByGlobalId[stateObj.selectedPostId]._bringToFront();
 			updateStickyPopup();						
 		}
+		
+		// track if possible
+		if(typeof ga == 'function') { 
+			ga('send', 'event', {
+			    eventCategory: 'channel',
+			    eventAction: 'show',
+			    eventLabel: stateObj.channelId
+			});
+		}
+
 	}
 	
 	
