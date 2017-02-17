@@ -216,7 +216,7 @@
 			if(typeof ga == 'function') { 
 				ga('send', 'event', {
 				    eventCategory: 'channel',
-				    eventAction: 'open',
+				    eventAction: 'switch',
 				    eventLabel: channelId
 				});
 			}
@@ -372,7 +372,7 @@
 
 		$("div.channel").on("click", function(e) {
 			var channelId = $(this).attr("data-channelId");
-			switchToChannel(channelId, true);
+			switchToChannel(channelId);
 		});
 	}
 	
