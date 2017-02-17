@@ -267,16 +267,6 @@
 			markersByGlobalId[stateObj.selectedPostId]._bringToFront();
 			updateStickyPopup();						
 		}
-		
-		// track if possible
-		if(typeof ga == 'function') { 
-			ga('send', 'event', {
-			    eventCategory: 'channel',
-			    eventAction: 'show',
-			    eventLabel: stateObj.channelId
-			});
-		}
-
 	}
 	
 	
