@@ -210,6 +210,15 @@
 	
 	
 	function switchToChannel(channelId, triggeredFromChannelsView) {
+		// track if possible
+		if(triggeredFromChannelsView && typeof ga == 'function') { 
+			ga('send', 'event', {
+			    eventCategory: 'channel',
+			    eventAction: 'open',
+			    eventLabel: channelId
+			});
+		}
+
 		var triggeredFromChannelsView = (typeof triggeredFromChannelsView !== 'undefined') ?  triggeredFromChannelsView : true;
 		if(triggeredFromChannelsView) {
 			stateObj.selectedPostId = -1;
