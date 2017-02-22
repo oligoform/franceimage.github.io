@@ -55,6 +55,26 @@ html, body, #mapCanvas {
 	stroke: black;
 }
 
+#forSale {
+	background-color: white;
+	padding: 20px;
+	text-align: center;
+	
+	font-size: 1.3em;
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	margin-left: -200px; 
+	margin-top: 20px;
+	height: 100px;
+	width: 400px;
+	z-index: 550;
+	pointer-events: none;
+	
+	opacity: 0.7;
+	stroke: black;
+}
+
 .leaflet-map-pane img.leaflet-tile {
 	filter: brightness(60%);
 }
