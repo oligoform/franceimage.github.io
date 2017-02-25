@@ -55,7 +55,7 @@ html, body, #mapCanvas {
 	stroke: black;
 }
 
-#forSale {
+#infoBar {
 	background-color: white;
 	padding: 20px;
 	text-align: center;
@@ -71,8 +71,10 @@ html, body, #mapCanvas {
 	z-index: 550;
 	pointer-events: none;
 	
-	opacity: 0.7;
+	opacity: 0.5;
 	stroke: black;
+	
+	display: none;
 }
 
 .leaflet-map-pane img.leaflet-tile {
